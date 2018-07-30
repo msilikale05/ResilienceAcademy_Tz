@@ -1,106 +1,101 @@
 <?php
-   /**
-    * Template Name: Home
-    */
-   ?>
-    <?php get_header(); ?>
-        <!-- home content -->
-        <section class="page_section" id="home">
-            <!--Slider-->
-            <div class="js-include" id="branding_home" style="margin-bottom: 20px;">
-                <div class="container">
-                    <div class="row">
-                        <!-- logo -->
-                        <div id="logo-foss4g" class="col-lg-4 text-center">
-                            <a href="index.php">
-               <img src="<?php echo get_bloginfo('template_directory'); ?>/img/FOSSG42018logo.svg" width="246"
-                  height="100" alt="foss4g logo"/></a>
-                        </div>
-                        <div id="logo-hot" class="col-lg-4 text-center">
-                            <a href="http://hotosm.org">
-               <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hot-logo.png "
-                  height="80" alt="HOT logo"/></a>
-                        </div>
-                        <div id="logo-osgeo" class="col-lg-4 text-center">
-                            <a href="http://osgeo.org">
-               <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo-osgeo.svg " width="246"
-                  height="100" alt="osgeo logo"/></a>
-                        </div>
-                    </div>
+/**
+ * Template Name: Home
+ */
+?>
+
+<?php get_header(); ?>
+    <!-- home content -->
+       <section class="page_section" id="home">
+        <!--Slider-->
+     <div class="js-include" id="branding_home" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div id="logo-foss4g" class="col-lg-4 text-center">
+                    <a href="index.php">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/FOSSG42018logo.svg" width="246"
+                             height="100" alt="foss4g logo"/></a>
+                </div>
+                <div id="logo-hot" class="col-lg-4 text-center">
+                    <a href="http://hotosm.org">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hot-logo.png "
+                             height="80" alt="HOT logo"/></a>
+                </div>
+                <div id="logo-osgeo" class="col-lg-4 text-center">
+                    <a href="http://osgeo.org">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo-osgeo.svg " width="246"
+                             height="100" alt="osgeo logo"/></a>
                 </div>
             </div>
-            <div class="full_slider preloader">
-                <div id="fullwidth_slider" class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <div class="full_slider_caption">
-                                <div class="container">
-                                    <h2 id="foss4g-title" style="color: white; text-transform: uppercase;font-weight: bold; margin-top: 2%">
-                        #foss4g2018
-                     </h2>
-                                    <p style="color: white;text-transform: uppercase;"><strong>27, 28 August 2018</strong> : Workshops
-                                        <br>
-                                        <strong>29, 30, 31 August 2018</strong> : Three day main conference
-                                        <br>
-                                        <strong>1, 2 September 2018</strong> : Code sprints and community events
-                                    </p>
-                                    <div class="global_count_wrapper">
-                                        <script>
-                                            jQuery(function() {
-                                                austDay = new Date();
-                                                austDay = new Date(2018, 8 - 1, 27, 12, 0, 0); //year, month-1, day
-                                                jQuery('#countdown').countdown({
-                                                    until: austDay
-                                                });
+        </div>
+    </div>
+        <div class="full_slider preloader">
+            <div id="fullwidth_slider" class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="full_slider_caption">
+                            <div class="container">
+                                <h2 id="foss4g-title" style="color: white; text-transform: uppercase;font-weight: bold; margin-top: 2%">
+                                    #foss4g2018</h2>
+                                <p style="color: white;text-transform: uppercase;"><strong>27, 28 August 2018</strong> :
+                                    Workshops<br>
+                                    <strong>29, 30, 31 August 2018</strong> : Three day main conference<br>
+                                    <strong>1, 2 September 2018</strong> : Code sprints and community events</p>
+
+                                 
+                                <div class="global_count_wrapper">
+                                    <script>
+                                        jQuery(function () {
+                                            austDay = new Date();
+                                            austDay = new Date(2018, 8 - 1, 27, 12, 0, 0); //year, month-1, day
+                                            jQuery('#countdown').countdown({
+                                                until: austDay
                                             });
-                                        </script>
-                                        <div id="countdown"></div>
+                                        });
+                                    </script>
+                                    <div id="countdown"></div>
+                                </div>
+                              <div style="color: #fff">
+                                <h2 class="text-center"  style="color: #fff;margin: 0" > The latest news about foss4g2018</h2>
+                                    <?php
+                                $args = array( 'numberposts' => 1, 'order'=> 'DSC', 'orderby' => 'title', 'category_name' => 'announcement'  );
+                                $postslist = get_posts( $args );
+                                // $max_size = 12/sizeof($postslist);
+                                // $col_css = "col-md-". $max_size;
+                                foreach ($postslist as $post) :  setup_postdata($post); ?> 
+<!--                                  <div class="<?php echo $col_css ?>">
+ -->                                       <!--  <div class="blog-title"> -->
+                                          <h5 style="color: #fff"><strong><?php the_title(); ?></strong></h5>
+                                        <!-- </div>  -->
+                                  <div class="row">  
+                                  <div class="col-md-8  col-md-offset-2">    
+                                 <div class="blog-data">
+                                            <p style="color: #fff"><?php the_excerpt(); ?></p>
+                                            <a href="<?php the_permalink(); ?>" style="color: #fff; font-size: 16px;">
+                                            <?php esc_attr_e('Read More ','wp_theme_foss_4_g_dar'); ?>
+                                            <i class="fa fa-long-arrow-right"></i></a>
+                                       </div> 
+                                       </div>
+                                </div>
+                                <?php endforeach; ?>
+                              </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+   <div class="announce"><a href="https://2018.foss4g.or.tz/EventManagement/public/e/1/foss4g-2018-dar-es-salaam" class="">
+      <strong>Book your tickets, don't miss the GIS event of the
+      year!</strong><br>
+      <u> Book your ticket here</u></a>
+   </div>
+</div>
+  <div class="col-md-6">
+                    <div class="announce">
+                                          <a href="https://2018.foss4g.org/grants-programme-ii/" class="">
+                                            <strong> Grants Program II</strong><br>
+                                            The Grants Program for FOSS4G 2018 Dar es Salaam is open for applications.<u> Click here to apply</u></a></div>
                                     </div>
-                                    <div style="color: #fff">
-                                        <h2 class="text-center" style="color: #fff;margin: 0"> The latest news about foss4g2018</h2>
-                                        <?php
-                           $args = array( 'numberposts' => 1, 'order'=> 'DSC', 'orderby' => 'title', 'category_name' => 'announcement'  );
-                           $postslist = get_posts( $args );
-                           // $max_size = 12/sizeof($postslist);
-                           // $col_css = "col-md-". $max_size;
-                           foreach ($postslist as $post) :  setup_postdata($post); ?>
-                                            <!--                                  <div class="<?php echo $col_css ?>">
-                           -->
-                                            <!--  <div class="blog-title"> -->
-                                            <h5 style="color: #fff"><strong><?php the_title(); ?></strong></h5>
-                                            <!-- </div>  -->
-                                            <div class="row">
-                                                <div class="col-md-8  col-md-offset-2">
-                                                    <div class="blog-data">
-                                                        <p style="color: #fff">
-                                                            <?php the_excerpt(); ?>
-                                                        </p>
-                                                        <a href="<?php the_permalink(); ?>" style="color: #fff; font-size: 16px;">
-                                                            <?php esc_attr_e('Read More ','wp_theme_foss_4_g_dar'); ?>
-                                                                <i class="fa fa-long-arrow-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <?php endforeach; ?>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="announce">
-                                                <a href="https://2018.foss4g.or.tz/EventManagement/public/e/1/foss4g-2018-dar-es-salaam" class="">
-                                                    <strong>Book your tickets, don't miss the GIS event of the
-                              year!</strong>
-                                                    <br>
-                                                    <u> Book your ticket here</u></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="announce">
-                                                <a href="https://2018.foss4g.org/grants-programme-ii/" class="">
-                                                    <strong> Grants Program II</strong>
-                                                    <br> The Grants Program for FOSS4G 2018 Dar es Salaam is open for applications.<u> Click here to apply</u></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                   
                                 </div>
                             </div>
                 </div>
@@ -111,41 +106,42 @@
             </div>
             <a href="#conference" class="next_section hide"></a>
             </div>
-            <!--//Slider-->
-        </section>
-        <section class="page_section" id="about">
-            <div class="inner">
-                <div class="container">
-                    <div class="row" style="margin-top: 20px">
-                        <div class="col-md-3 col-sm-6">
-                            <h3 class="section-header">
-               <a href="">Venue</a>
-            </h3>
-                            <p class="section-except">Is located as a branch of the Arusha International Conference Centre for the purpose of built Convention Centre in Dar es salaam City a major gateway to the world renowned “southern tourist circuit”, the “coastal tourist circuit” and Zanzibar in Tanzania, with sophisticated audio-video, communication and Information technology.</p>
-                            <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <h3 class="section-header">
-               <a href="">Programe</a>
-            </h3>
-                            <p class="section-except">FOSS4G 2018 has the compacted schedule with gives more opportunities to the FOSS community to interact with other community. With great keynote speakers, paper sessions, and talks, we believe this event has great opportunities for learning and networking but adding more FOSS communities in African countries.</p>
-                            <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <h3 class="section-header">
-               <a href="/workshop-schedule">Workshop</a>
-            </h3>
-                            <p class="section-except">Two days of conference workshops will be held prior to the main conference at JNICC and State University of Zanzibar with hands on sessions for both new and experienced users.
-                            </p>
-                            <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <h3 class="section-header">
-               <a href="">Social Events</a>
-            </h3>
-                            <p class="section-except">Many evening events are planned, including a Icebreaker at National museum, a Social along the beach, and a Gala at the JNICC.</p>
-                            <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-                        </div>
+
+        <!--//Slider-->
+    </section>
+
+    <section class="page_section" id="about">
+        <div class="inner">
+            <div class="container">
+                <div class="row" style="margin-top: 20px">
+                    <div class="col-md-3 col-sm-6">
+                    <h3 class="section-header">
+                        <a href="">Venue</a>
+                    </h3>
+                        <p class="section-except">Is located as a branch of the Arusha International Conference Centre for the purpose of built Convention Centre in Dar es salaam City a major gateway to the world renowned “southern tourist circuit”, the “coastal tourist circuit” and Zanzibar in Tanzania, with sophisticated audio-video, communication and Information technology.</p>
+                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    </div>
+                     <div class="col-md-3 col-sm-6">
+                     <h3 class="section-header">
+                        <a href="">Programe</a>
+                    </h3>
+                        <p class="section-except">FOSS4G 2018 has the compacted schedule with gives more opportunities to the FOSS community to interact with other community. With great keynote speakers, paper sessions, and talks, we believe this event has great opportunities for learning and networking but adding more FOSS communities in African countries.</p>
+                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    </div>
+                     <div class="col-md-3 col-sm-6">
+                     <h3 class="section-header">
+                        <a href="/workshop-schedule">Workshop</a>
+                    </h3>
+                        <p class="section-except">Two days of conference workshops will be held prior to the main conference at JNICC and State University of Zanzibar with hands on sessions for both new and experienced users.
+                        </p>
+                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    </div>
+                     <div class="col-md-3 col-sm-6">
+                     <h3 class="section-header">
+                        <a href="">Social Events</a>
+                    </h3>
+                        <p class="section-except">Many evening events are planned, including a Icebreaker at National museum, a Social along the beach, and a Gala at the JNICC.</p>
+                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </div>
                 </div>
         </section>

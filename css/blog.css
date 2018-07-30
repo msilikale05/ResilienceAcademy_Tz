@@ -148,10 +148,10 @@ margin-top: 15px;
     border-left: #ccc 1px solid;
     white-space: nowrap;
 }
-.auth{
-	 color: #422d3f;
-	 font-weight: 700;
-    padding: 4px 2px 5px 0px;
+.auth {
+    color: #422d3f;
+    font-weight: 700;
+    padding: 1% 1% 4% 0;
 }
 .blog-link{
 	border-radius: 4px;

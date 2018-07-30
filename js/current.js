@@ -45,7 +45,7 @@ function fullwidthslider() {
 	else {
 		var full_slider_h = jQuery(window).width()*0.7;
 	}
-	full_slider_h = 694;
+	full_slider_h = 940;
 
 	jQuery('.full_slider .flexslider, .full_slider .flexslider li').css({'width': full_slider_w, 'height': full_slider_h});
 	jQuery('.full_slider, .full_slider .flexslider li img.slide_bg').attr('style', 'height: '+full_slider_h+'px');		

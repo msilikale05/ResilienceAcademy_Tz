@@ -3,13 +3,7 @@
         <div class="container">
             <div class="row">
 
-             <div class="intro-banner3">
-                        <div class="container">
-                            <h2 class="text-center">
-                                <?php single_post_title(); ?>
-                            </h2>
-                        </div>
-                        </div>
+           
                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                     <div class="blog-content blog-single-content">
 
@@ -22,13 +16,14 @@
                     
                 </div>
              <?php endif;?>
-                       <div class="auth">
+     
+                        <div class="blog-data">
+                            <h3><?php the_title(); ?></h3>
+                                            <div class="auth">
      <p>This post was written by <?php the_author(); ?>
         <time class="postdate"><?php echo get_the_date(); ?></time>
         </p>
         </div>
-                        <div class="blog-data">
-                            <h3><?php the_title(); ?></h3>
                           <?php
                                 the_content();
 

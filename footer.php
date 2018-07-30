@@ -1,4 +1,5 @@
-<?php show_post('sponsor-logos');  // Shows sponsor logos from sponsor logos page. ?>
+
+<?php show_post('sponsor-logos'); ?>
 <!-- content-info adds the triangly bits behind the div -->
 <footer class="content-info js-include" title="<?php echo get_bloginfo('template_directory'); ?>/includes/footer.php"
         id="contact"></footer>

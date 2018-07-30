@@ -11,7 +11,12 @@
 	<header class="entry-header">
 <!-- 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
  -->	</header><!-- .entry-header -->
-
+<section  class="page_section common">
+<div class="inner">
+<div class="container">
+<div class="row">
+<!-- Welcome Text -->
+<div class="col-md-10 col-md-offset-1">
 	<div class="entry-content">
 		<?php
 			the_content();
@@ -25,4 +30,9 @@
 <!-- 
 	<?php if ( get_edit_post_link() ) : ?>
 	<?php endif; ?> -->
+  </div>
+	</div>
+	</div>
+	</div>
+	</section>
 </article><!-- #post-<?php the_ID(); ?> -->
