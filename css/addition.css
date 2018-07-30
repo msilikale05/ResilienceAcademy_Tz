@@ -1,0 +1,405 @@
+.section-header {
+     font-size: 1.725rem;
+    line-height: 1.3333333333;
+    margin-bottom: 0;
+    font-weight: 700;
+    padding-bottom: 6%;
+}
+.headlink a {
+    margin-top: 0;
+    font-size: 1em;
+    line-height: 1.71429;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 4px;
+    font-style: italic;
+    background-color: #4eb4e4;
+    font-weight: normal;
+    font-style: normal;
+    padding: 6px;
+    margin-top: 6px;
+    color: #fff;
+    border-radius: 4px;
+}
+.section-except{
+padding-bottom: 5%;
+}
+#home{
+	 background-image: url('../img/backgrounds/fronpage_image.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+#branding_home{
+    background-color: rgba(255, 255, 255, 0.03);
+    bottom: 0;
+    padding: 4rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+/* box-shadow:0px 0px 50px 10px #6a7674 inset;    
+*/
+}
+.blog-info p{
+  text-overflow: ellipsis;
+   line-height: 1.8em;
+  overflow: hidden;
+  position: relative; 
+  max-height: 6.8em; 
+  text-align: justify;
+  display: inline-block;
+  word-wrap: break-word; 
+ 
+}
+.round.pull-left{
+      height: 25px;
+    width: 25px;
+    background-color: #4cb05d;
+    border-radius: 50%;
+    border: 2px dashed;
+    display: inline-block;
+}
+p{
+    margin: 0;
+}
+#sponder_row{
+    margin-top: 7%;
+}
+#sponsors{
+        margin-top: 12%;
+
+}
+
+#mapid { height: 360px; }
+.blog-data p{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: justify;
+  word-wrap: break-word; 
+ font-size: 16px;
+}
+@media (min-width: 768px) {
+.blog-data p{
+  max-height: 6.8em;
+
+}
+.popup .popuptext.show {
+    width: 800px;
+
+}
+}
+@media (max-width: 767px) {
+ .primary-items{
+  display: grid;
+}
+.popup .popuptext.show {
+    width: 200px;
+        height: 100%;
+
+}
+.collapse.navbar-collapse.in{
+ height: -webkit-fill-available;
+     visibility: visible;
+
+
+}
+.primary-items .sub-menu{
+     position: static;
+    float: none;
+    width: auto;
+
+}
+.open>.primary-items .sub-menu {
+    display: block;
+}
+}
+
+.gen-section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#speaker-div {
+    position: relative;
+}
+.gen-section-title {
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff;
+    margin-top: 0;
+    color: #515151;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+}
+.img-circle {
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.speaker .courtesy {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: smaller;
+}
+.speaker .speaker-name {
+    font-size: 18px;
+    line-height: 1.3333333333;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.speaker .speaker-excerpt {
+  
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.speaker .speaker-org {
+ 
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-family: "Open Sans Bold",Helvetica,Arial,Sans-Serif;
+    font-weight: bold;
+}
+.speaker .popup {
+    font-size: 14px;
+    font-size: 1.3rem;
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 4px;
+    font-style: italic;
+    background-color: #4380c2;
+    font-weight: normal;
+    font-style: normal;
+    padding: 6px;
+    margin-top: 6px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.page-content a {
+    text-decoration: none;
+}
+@media screen and (min-width: 35em){
+.speaker:nth-child(4n+1) {
+    clear: left;
+}
+}
+
+@media screen and (min-width: 35em) {
+.speaker {
+    float: left;
+    display: block;
+    width: 48.821174201%;
+}
+}
+.modalDialog {
+    color: #fff;
+    position: relative;
+    padding: 5px 20px 13px;
+    border-radius: 10px;
+    background: #000;
+}
+.gen-section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#speaker-div {
+    position: relative;
+}
+.gen-section-title {
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff;
+    margin-top: 0;
+    color: #515151;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+}
+.img-circle {
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.speaker .courtesy {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: smaller;
+}
+.speaker .speaker-name {
+    font-size: 18px;
+    line-height: 1.3333333333;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.speaker .speaker-excerpt {
+  
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.speaker .speaker-org {
+ 
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-family: "Open Sans Bold",Helvetica,Arial,Sans-Serif;
+    font-weight: bold;
+}
+
+.speaker .popup {
+    font-size: 14px;
+    font-size: 1.3rem;
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 4px;
+    font-style: italic;
+    background-color: #4380c2;
+    font-weight: normal;
+    font-style: normal;
+    padding: 6px;
+    margin-top: 6px;
+    color: #fff;
+    border-radius: 4px;
+}
+.speaker1-box {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+.speaker1 > .img-circle{
+    margin-top: 9%;
+}
+.speaker1-box .speaker1-name {
+        font-size: 18px;
+    line-height: 1.3333333333;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.speaker1-box .speaker1-excerpt {
+
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.speaker1-box .speaker1-org {
+   
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-family: "Open Sans Bold",Helvetica,Arial,Sans-Serif;
+    font-weight: bold;
+}
+.speaker1-box .speaker1-modal-button {
+      font-size: 1.3rem;
+    line-height: 1.7142857143;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 4px;
+    font-style: italic;
+    background-color: #4380c2;
+    font-weight: normal;
+    font-style: normal;
+    padding: 6px;
+    margin-top: 6px;
+    color: #fff;
+    border-radius: 4px;
+}
+.page-content a {
+    text-decoration: none;
+}
+.speaker{
+    margin-top: 3%;
+
+}
+.speaker1{
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 35em){
+.speaker:nth-child(4n+1) {
+    clear: left;
+    margin-top: 3%;
+
+}
+}
+
+@media screen and (min-width: 35em) {
+.speaker {
+    float: left;
+    display: block;
+     margin-top: 3%;
+    width: 48.821174201%;
+}
+}
+
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+
+}
+
+#myPopup1{
+    right: 10%;
+    height: 100%;
+}
+#myPopup3{
+ right: 10%;
+
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
