@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	console.log('every thing is ready');
     $(".js-include").each(function(){
         $(this).load($(this).attr("title"));
     });
