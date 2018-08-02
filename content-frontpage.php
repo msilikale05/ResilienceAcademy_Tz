@@ -114,37 +114,39 @@
         <div class="inner">
             <div class="container">
                 <div class="row" style="margin-top: 20px">
-                    <div class="col-md-3 col-sm-6">
-                    <h3 class="section-header">
-                        <a href="">Venue</a>
+                  <div class="col-md-3 col-sm-6">
+                     <h3 class="section-header">
+            <p class="headlink">
+              <a href="/attending/#location" class="speaker-modal-button">Venue<i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </h3>
                         <p class="section-except">Is located as a branch of the Arusha International Conference Centre for the purpose of built Convention Centre in Dar es salaam City a major gateway to the world renowned “southern tourist circuit”, the “coastal tourist circuit” and Zanzibar in Tanzania, with sophisticated audio-video, communication and Information technology.</p>
-                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </div>
-                     <div class="col-md-3 col-sm-6">
+
+                    <div class="col-md-3 col-sm-6">
                      <h3 class="section-header">
-                        <a href="">Programe</a>
+                        
+           <p class="headlink"><a href="/programme" class="speaker-modal-button">Programe <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </h3>
                         <p class="section-except">FOSS4G 2018 has the compacted schedule with gives more opportunities to the FOSS community to interact with other community. With great keynote speakers, paper sessions, and talks, we believe this event has great opportunities for learning and networking but adding more FOSS communities in African countries.</p>
-                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </div>
                      <div class="col-md-3 col-sm-6">
                      <h3 class="section-header">
-                        <a href="/workshop-schedule">Workshop</a>
+                        
+                  <p class="headlink"><a href="/programme/list-of-presentations" class="speaker-modal-button">Workshop<i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+
                     </h3>
                         <p class="section-except">Two days of conference workshops will be held prior to the main conference at JNICC and State University of Zanzibar with hands on sessions for both new and experienced users.
                         </p>
-                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </div>
                      <div class="col-md-3 col-sm-6">
                      <h3 class="section-header">
-                        <a href="">Social Events</a>
+                  <p class="headlink"><a href="/social-events" class="speaker-modal-button">Social Events<i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </h3>
                         <p class="section-except">Many evening events are planned, including a Icebreaker at National museum, a Social along the beach, and a Gala at the JNICC.</p>
-                        <p class="headlink"><a href="" class="speaker-modal-button">More info <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
                     </div>
-                </div>
-        </section>
+            </div>
+        </div>
+    </section>
         <!-- conference content-->
         <section class="page_section triangle" id="vision" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/img/backgrounds/vision.jpg)">
             <div class="inner">
@@ -222,7 +224,7 @@
             </div>
         </section>
         <section>
-            <div class="gen-section" id="speaker-div">
+         <div class="gen-section" id="speaker-div">
                 <div class="gen-section-title">
                     <h1 style="font-weight: 700;">Keynote Speakers</h1>
                 </div>
@@ -232,12 +234,11 @@
                         <h2 class="speaker-name">Angela Oduor Lungati</h2>
                         <p class="speaker-excerpt">Director of Community Engagement</p>
                         <p class="speaker-org">Ushahidi</p>
-                        <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-Angela">Click for details</button>
-                        <!-- Modal -->
+                      
                         <div class="modal fade" id="myModal-Angela" role="dialog">
                             <div class="modal-dialog">
-                                <!-- Modal content-->
+                             
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -264,12 +265,12 @@
                         <h2 class="speaker-name">Neema Meremo</h2>
                         <p class="speaker-excerpt">Human Resource Manager</p>
                         <p class="speaker-org">Hope for girls and women Tanzania </p>
-                        <!-- Trigger the modal with a button -->
+                        
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-Neema">Click for details</button>
-                        <!-- Modal -->
+                      
                         <div class="modal fade" id="myModal-Neema" role="dialog">
                             <div class="modal-dialog">
-                                <!-- Modal content-->
+                               
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -305,12 +306,10 @@
                         <h2 class="speaker-name">María Arias de Reyna</h2>
                         <p class="speaker-excerpt">software engineer</p>
                         <p class="speaker-org">GeoCat</p>
-                        <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-María">Click for details</button>
-                        <!-- Modal -->
+                       
                         <div class="modal fade" id="myModal-María" role="dialog">
                             <div class="modal-dialog">
-                                <!-- Modal content-->
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -336,12 +335,11 @@
                         <h2 class="speaker-name">Denise McKenzie</h2>
                         <p class="speaker-excerpt">Communication and Outreach program globally for the consortium</p>
                         <p class="speaker-org">OGC</p>
-                        <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click for details</button>
-                        <!-- Modal -->
+                      
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog">
-                                <!-- Modal content-->
+                               
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
