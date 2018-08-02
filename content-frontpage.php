@@ -203,21 +203,24 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <h3>FOSS4G Dar es Salaam 2018 Location(s) Map</h3>
-                            <div id="mapid"></div>
-                            <script type="text/javascript">
+                            <!-- <h3>FOSS4G Dar es Salaam 2018 Location(s) Map</h3> -->
+                            <div id="mapid"><?php show_post('homepage-map'); ?></div>
+                            <!-- <script type="text/javascript">
                                 $(function() {
                                     console.log('showing map');
                                     var mymap = L.map('mapid').setView([-6.8110559, 39.289937], 16);
+                                    var marker = L.marker([-6.8110509, 39.2220905]).addTo(mymap);
                                     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                                         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
                                         maxZoom: 18,
                                         id: 'mapbox.streets',
                                         accessToken: 'pk.eyJ1IjoibWxvd2VlZGdhciIsImEiOiJjaWxqZXh4ZTAwMDl4dzhsend0a2cxY3JqIn0.KtlMeVuCRdoDod0giDBAdQ'
                                     }).addTo(mymap);
+                                    L.marker([51.5, -0.09]).addTo(mymap);
+                                    
 
                                 });
-                            </script>
+                            </script> -->
                         </div>
                     </div>
                 </div>
