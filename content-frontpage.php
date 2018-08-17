@@ -226,11 +226,20 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section> 
          <div class="gen-section" id="speaker-div">
-                <div class="gen-section-title">
+         <div class="text-center">
+            <h1 style="font-weight: 700;">Guest of Honour</h1>
+            <div class="">
+            <img class="img-circle" src="<?php echo get_bloginfo('template_directory'); ?>/img/bgs/january.jpeg)" alt="January Photo" height="200" width="200">
+                    <h2 class="speaker-name" ><u><a href="http://www.januarymakamba.com/" target="_blank">Hon. January Makamba</a></u></h2>
+                    <p class="speaker-excerpt"> Minister responsible for the Environment and the Union</p>
+                    </div>
+        </div>
+                <div class="gen-section-title" style="margin-top:5%">
                     <h1 style="font-weight: 700;">Keynote Speakers</h1>
                 </div>
+
                 <div class="speaker-box">
                     <div class="speaker">
                         <img class="img-circle" src="<?php echo get_bloginfo('template_directory'); ?>/img/bgs/angela.jpg)" alt="angela" height="200" width="200">
@@ -363,30 +372,6 @@
                         </div>
                     </div>
                 </div>
-                <!--   <div class="speaker1-box">
-         <div class="speaker1">
-           <img class="img-circle" src="<?php echo get_bloginfo('template_directory'); ?>/img/bgs/january.jpeg)" alt="January Photo" height="200" width="200">
-           <h2 class="speaker1-name">January Makamba</h2>
-           <p class="speaker1-excerpt">Ministry of Environment Tanzania</p>
-           <p class="speaker1-org">Tanzania </p>
-          <div class="popup" onclick="speakerFive()">Click for details
-           <div class="popuptext" id="myPopup4">
-           <div class="modalDialog">
-           <h2>Mar&#237;a Arias de Reyna</h2>
-           <p style="text-align:left; line-height:125%"><strong>Spatial Data Infrastructures for everyone</strong><br /><br />Transfer protocol standards and data format standards are being put to work by many governments daily because these standards make data sharing easy. At the same time many data
-             producers and users outside the government are using “wild open data formats” that do not follow any strict rules. These formats sometimes become the ”de facto” standard and evolve in parallel across the globe, making each one a new flavor of
-             the original. How do we deal with this? Is there a way to have a spatial data infrastructure(SDI) that can reach all use cases and not fail in the attempt?</p>
-
-           <p style="text-align:left; line-height:125%"><strong>Mar&#237;a Arias de Reyna</strong>, a Software Engineer at GeoCat, is one of the core developers of GeoNetwork, a free and open source catalog to manage spatially referenced resources under the OSGeo umbrella. María has been working with
-             geospatial software for almost a decade: from fleet management to routing platforms and now metadata. She is a free (as in freedom) and open software evangelist and a very active member within several developer communities.
-
-           </p>
-          </div>
-          </div>
-         </div> 
-         </div>
-
-         </div> -->
 
             </div>
             </div>
