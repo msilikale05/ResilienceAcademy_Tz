@@ -203,7 +203,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <!-- <h3>FOSS4G Dar es Salaam 2018 Location(s) Map</h3> -->
+                            <h3>FOSS4G Dar es Salaam 2018 Location(s) Map</h3>
                             <div id="mapid"><?php show_post('homepage-map'); ?></div>
                             <!-- <script type="text/javascript">
                                 $(function() {

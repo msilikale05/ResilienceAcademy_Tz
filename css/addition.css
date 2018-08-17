@@ -163,8 +163,8 @@ p{
 .speaker .speaker-org {
  
     line-height: 1.7142857143;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
     margin-top: 0;
     font-family: "Open Sans Bold",Helvetica,Arial,Sans-Serif;
     font-weight: bold;
@@ -199,7 +199,8 @@ p{
 .speaker {
     float: left;
     display: block;
-    width: 48.821174201%;
+ 	width: 48.821174201%;
+
 }
 }
 .modalDialog {
@@ -208,6 +209,8 @@ p{
     padding: 5px 20px 13px;
     border-radius: 10px;
     background: #000;
+ 	width: 48.821174201%;
+
 }
 .gen-section {
     margin-left: auto;
@@ -256,9 +259,9 @@ p{
 .speaker .speaker-org {
  
     line-height: 1.7142857143;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
     margin-top: 0;
+   	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
     font-family: "Open Sans Bold",Helvetica,Arial,Sans-Serif;
     font-weight: bold;
 }
@@ -350,7 +353,6 @@ p{
     float: left;
     display: block;
      margin-top: 3%;
-    width: 48.821174201%;
 }
 }
 
