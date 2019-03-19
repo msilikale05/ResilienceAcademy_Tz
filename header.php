@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>foss4g2018</title>
+    <title>Resilience Academy</title>
     <meta charset="utf-8">
     <title><?php echo get_bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/img/favicon.ico">
+    <!-- <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/img/favicon.ico"> -->
     <link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700" rel="stylesheet">
 
