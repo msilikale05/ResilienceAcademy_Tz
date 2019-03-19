@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/img/favicon.ico"> -->
+    <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700" rel="stylesheet">
 
