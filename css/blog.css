@@ -1,12 +1,4 @@
 
-.navmenu.navbar.navbar-inverse.navbar-fixed-top {
-  width: 100%;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  padding: 12px 18px;
-  border-color: #ffffff;
-  transition: background-color 0.4s ease-out;
-}
 
 nav.scroll.navbar.navbar-inverse.navbar-fixed-top{
 background-color: rgba(61,61,61,0.66);
@@ -60,7 +52,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  color: #eef;
 }
 .primary-items li.menu-item-has-children::after:hover {
     content: "\f106";
-    color: #4caf5b;
+    color: #4c93af;
 }
 .primary-items li.menu-item-has-children:hover::after {
     content: "\f106";
@@ -72,7 +64,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  color: #eef;
     color: #454545;
 }
 .primary-items a:hover {
-    color: #4eb4e4;
+    color: #00a4dd;
 }
 
 .primary-items .sub-menu {

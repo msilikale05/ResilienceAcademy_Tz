@@ -33,41 +33,57 @@
     <header id="header">
     <section class="js-include">
          <div class="gtl-site-branding">
-                        <?php 
-                        if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) :
-                            the_custom_logo();
-                        else : 
-                            ?>
-                                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                           
-                            <p class="site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></p>
-                        <?php endif; ?>
-                    </div><!-- .site-branding -->
-                    <div cclass="">
+                     <div class="">
+
                     <nav id="gtl-site-navigation" class="navmenu navbar navbar-inverse navbar-fixed-top">
-                        <div class="container">
-                            <div class="navbar-header">
-                                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                  </button> 
-                         </div>
-        <div  class="collapse navbar-collapse" id="myNavbar">
+                        <div class="container-fluid top">
+            
+                 <div  class="collapse navbar-collapse" id="myNavbar">
                         <?php 
                             wp_nav_menu( array( 
                                 'theme_location' => 'primary', 
                                 'menu_id'         => 'myNavbar',
                                 'menu_class'      => 'primary-items',         
-                                'container'      => 'div',
-                                'container_class'=> 'text-center',
+                                'container-fluid'      => 'div',
+                                'container_class'=> 'primary_menu',
                                 'walker'         => '',
                                 'fallback_cb'    => 'wp_page_menu',
 
                             ) ); 
                         ?>
                         </div>
+                            </div>
+                            <div class="container-fluid secondary">
+                            <div class="navbar-header">
+                            <?php 
+                        if ( function_exists( 'the_custom_logo' ) ) {
+                            the_custom_logo();
+                        }
+                         ?>
+                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button> 
+                         </div>
+                         <div class="collapse navbar-collapse" id="secondary_nav">
+                            <div class="container ">
+                           <?php 
+                            wp_nav_menu( array( 
+                                'theme_location' => 'secondary', 
+                                'menu_id'         => 'secondary_nav',
+                                'menu_class'      => 'secondary-items',         
+                                'container-fluid'      => 'div',
+                                'container_class'=> 'text-center',
+                                'walker'         => '',
+                                'fallback_cb'    => 'wp_page_menu',
+
+                            ) ); 
+                        ?>
+                                </div>
+                            </div>
+                        
                         </div>
                     </nav><!-- #ht-site-navigation -->
                     </div>

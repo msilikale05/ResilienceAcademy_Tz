@@ -10,8 +10,8 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'wp_theme_foss_4_g_dar-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css','1.0',true );
 wp_enqueue_style( 'wp_theme_foss_4_g_dar-slick', get_template_directory_uri() . '/css/slick.css"',true );
 wp_enqueue_style( 'wp_theme_foss_4_g_dar-plugins', get_template_directory_uri() . '/css/plugins.css"',true );
-wp_enqueue_style( 'wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/blog.css"',true );
-wp_enqueue_style( 'wp_theme_foss_4_g_dar-addition', get_template_directory_uri() . '/css/addition.css"',true );
+wp_enqueue_style( 'wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/racademy.css"',true );
+// wp_enqueue_style( 'wp_theme_foss_4_g_dar-addition', get_template_directory_uri() . '/css/addition.css"',true );
 wp_enqueue_style( 'wp_theme_foss_4_g_dar-style', get_template_directory_uri() . '/css/style.css"',true );
  wp_enqueue_style( 'leaflet_css', get_template_directory_uri() . '/css/leaflet.css');
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', array ( ), true);
@@ -40,6 +40,8 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 function wpb_custom_new_menu() {
 register_nav_menus( array(
         'primary' => esc_html__( 'Primary', 'wp_theme_foss_4_g_dar' ),
+        'secondary' => esc_html__( 'Secondary', 'wp_theme_foss_4_g_dar' ),
+
     ) );
 }
 add_action( 'init', 'wpb_custom_new_menu' );
@@ -101,6 +103,7 @@ function page_widgets_init() {
 
 }
 add_action( 'widgets_init', 'page_widgets_init' );
+
 
 
 add_action( 'customize_register' , 'my_theme_options' );
@@ -167,7 +170,19 @@ function my_theme_options( $wp_customize ) {
 }
 add_filter( 'body_class', 'remove_class_function' );
 
+add_theme_support( 'custom-logo' );
 
+function foss4g2018_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'the_custom_logo_custom_logo_setup' );
 
 /**
  * Function to check if version 1.8.5 or less has been previously installed.
