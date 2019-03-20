@@ -113,7 +113,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 /* foot css */
 
 .site-footer {
-    margin: 400px 0 0 0;
     padding: 150px 20px 0 20px;
     background-color: #00a4dd;
 }
