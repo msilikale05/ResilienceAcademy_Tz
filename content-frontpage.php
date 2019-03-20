@@ -36,6 +36,17 @@
 	    	</div>
 	    </div>
     </section>
+
+    <div class="mission-page">
+      <div class="mission-title">Mission</div>
+      <div class="mission-row-one">
+          <div class="mission-circle">
+            DRONE IMAGERY COMPETITION
+          </div>
+      </div>
+      <div>Second row</div>
+      <div>Third row</div>
+    </div>
     <section class="ftco-section services-section bg-light">
       <div class="container">
         <div class="row d-flex">
