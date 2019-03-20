@@ -18,8 +18,9 @@
     width: 100%;
     box-sizing: border-box;
 }
+
 .navbar-inverse {
-    background-color: #00a4dd; 
+    background-color: #00a4dd;
     border-color: #00a4dd;
 }
 
@@ -35,11 +36,13 @@
     outline: none;
     position: relative;
 }
-.primary_menu{
+
+.primary_menu {
     font-size: 11px;
     font-weight: 500;
     margin-top: 10px;
 }
+
 .primary_menu li a:hover {
     color: #00a4dd;
 }
@@ -52,19 +55,21 @@
     position: relative;
     text-transform: uppercase;
 }
-.text-center{
+
+.text-center {
     text-align: center;
     color: #fff;
     font-size: 16px;
     margin-top: 15px;
     font-weight: 700;
-
 }
-.logo  img {
+
+.logo img {
     width: 50px;
     height: auto;
     margin-left: 100px;
 }
+
 .slider_page img {
     height: 900px;
     width: 100%;
@@ -73,16 +78,20 @@
 .ftco-no-pb {
     padding-bottom: 0 !important;
 }
+
 .ftco-no-pt {
     padding-top: 0 !important;
 }
+
 .ftco-section {
     padding: 7em 0;
     position: relative;
 }
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
+
 .row {
     display: -webkit-box;
     display: flex;
@@ -91,16 +100,18 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin-right: -15px;
     margin-left: -15px;
 }
-@media (min-width: 768px){
-.col-md-12 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+
+@media (min-width: 768px) {
+    .col-md-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 /* foot css */
+
 .site-footer {
     margin: 400px 0 0 0;
     padding: 150px 20px 0 20px;
@@ -118,24 +129,23 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     right: 50px;
     z-index: 1000;
     padding: 15px;
-
     background-color: #e4d90f;
-    -webkit-box-shadow: 19px 20px 22px -10px rgba(247,234,13,0.42);
-    -moz-box-shadow: 19px 20px 22px -10px rgba(247,234,13,0.42);
-    box-shadow: 19px 20px 22px -10px rgba(247,234,13,0.42);
+    -webkit-box-shadow: 19px 20px 22px -10px rgba(247, 234, 13, 0.42);
+    -moz-box-shadow: 19px 20px 22px -10px rgba(247, 234, 13, 0.42);
+    box-shadow: 19px 20px 22px -10px rgba(247, 234, 13, 0.42);
 }
 
 .footer-content {
     display: flex;
     color: white;
     justify-content: space-between;
-
-
 }
+
 .footer-item {
     display: flex;
     flex-direction: column;
 }
+
 .footer-divider {
     border-bottom: 2px solid;
     width: 150px;
@@ -155,4 +165,33 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: flex;
     flex-direction: column;
     border: 1px solid yellow;
+}
+
+.latest {
+    background-color: #dadada;
+}
+
+.card {
+    margin-top: 15px;
+}
+
+.blogimg>img {
+    width: 100%;
+    height: 320px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+.blog-title {
+    padding: 12px 24px;
 }

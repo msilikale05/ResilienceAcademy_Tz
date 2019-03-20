@@ -52,11 +52,10 @@ html {
 }
 
 body {
-	color: #003a40;
 	font-family: "Miriam Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	line-height: 2.2rem;
-	background: #fff;
+	background: #333;
 	margin: 0;
 	padding: 0;
 }
@@ -75,13 +74,19 @@ body {
 	overflow: hidden;
 }
 
-a {
-	color: #4eb4e4;
+h4 a {
+	color: #333333;
+	font-weight: 600;
 	text-decoration: none !important;
+}
+h3 a{
+	color: #333333;
 }
 
 a:hover {
-	color: #2980b9;
+	color: #00a4dd;
+	text-decoration-line: none;
+
 }
 
 strong {
@@ -120,7 +125,7 @@ h4 {
 
 h5 {
 	font-size: 18px;
-	color: #2d2e2e;
+	color: #333;
 	font-weight: 300;
 	line-height: 27px;
 	padding: 0;
@@ -129,7 +134,7 @@ h5 {
 
 h6 {
 	font-size: 16px;
-	color: #2d2e2e;
+	color: #333;
 	font-weight: 300;
 	line-height: 24px;
 	padding: 0;
@@ -138,11 +143,11 @@ h6 {
 
 h3 {
 	font-size: 24px;
-	color: #2d2e2e;
-	font-weight: 400;
+	color: #333;
+	font-weight: 600;
 	line-height: 28px;
 	padding: 0;
-	margin: 0 0 24px 0;
+	/* margin: 0 0 24px 0; */
 }
 
 ul.list {

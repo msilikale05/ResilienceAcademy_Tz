@@ -58,9 +58,9 @@ define(SINGLE_PATH, TEMPLATEPATH . '/single');
 $post_date = get_the_date( 'l F j, Y' ); echo $post_date;
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 250, 250);
-add_image_size( 'single-feature-thumbnai', 290, 218, true );
-add_image_size( 'single-featured-post', 0, 512, true  );
-add_image_size( 'single-featured', 280, 512, true  );
+// add_image_size( 'single-feature-thumbnai', 350, 228, true );
+// add_image_size( 'single-featured-post', 0, 0, true  );
+// add_image_size( 'single-featured', 380, 0, true  );
 
 
 

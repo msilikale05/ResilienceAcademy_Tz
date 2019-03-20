@@ -36,47 +36,38 @@
 	    	</div>
 	    </div>
     </section>
-    <section class="ftco-section services-section bg-light">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-yatch"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Activities</h3>
-                <p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-around"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Travel Arrangements</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-compass"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Private Guide</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-map-of-roads"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Location Manager</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="latest"> 
+<div class="container" style="padding-top:44px;">
+<div class="row">
+    <?php
+$args = array( 'numberposts' => 3, 'order'=> 'DSC', 'orderby' => 'title' );
+$postslist = get_posts( $args );
+$max_size = 12/sizeof($postslist);
+$col_css = "col-md-". $max_size;
+foreach ($postslist as $post) :  setup_postdata($post); ?> 
+ <div class="<?php echo $col_css ?>">
+ <div class="card">
+ <figure class="blogimg">
+  <?php the_post_thumbnail( 'single-featured'); ?>
+ </figure>
+   <div class="blog-title">
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+  <div class="auth">
+   <h6>Written by <?php the_author(); ?>
+   <time class="postdate"><?php echo get_the_date(); ?></time>
+ </h6>
+ </div>
+ <div class="blog-info">
+     <p><?php the_excerpt(); ?></p>
+    <a href="<?php the_permalink(); ?>" class="blog-link">
+        <?php esc_attr_e('Read More ','wp_theme_foss_4_g_dar'); ?>
+      <i class="fa fa-long-arrow-right"></i></a>
+ </div> 
+</div>
+</div>
+</div> 
+<?php endforeach; ?>
+</div>
+</div>  
     </div>
   <?php get_footer(); ?>
