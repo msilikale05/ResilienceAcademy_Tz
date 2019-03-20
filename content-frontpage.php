@@ -5,30 +5,38 @@
 ?>
 
 <?php get_header(); ?>
-    <!-- home content -->
-    <div class="slider_page">  
-       <img src="<?php echo get_bloginfo('template_directory'); ?>/img/bg_1.jpg"
-          alt="foss4g logo" /></a>
-</div>
-<section class="ftco-section ftco-no-pb ftco-no-pt" >
-    	<div class="container">
-	    	<div class="row">
-					<div class="col-md-12">
-						<div class="search-wrap-1 ftco-animate p-4">
-                        <nav id="gtl-site-navigation" class="middle_nav">
-                    <div  class="" id="middle_nav">
-                        <?php 
-                            wp_nav_menu( array( 
-                                'theme_location' => 'tertiary', 
-                                'menu_id'         => 'middle_nav',
-                                'menu_class'      => 'tertiary-items',         
-                                'container-fluid'      => 'div',
-                                'container_class'=> 'tertiary_menu',
-                                'walker'         => '',
-                                'fallback_cb'    => 'wp_page_menu',
+<!-- home content -->
 
-                            ) ); 
-                        ?>
+<!--Slider-->
+<div class="full_slider preloader">
+    <div id="fullwidth_slider" class="flexslider">
+        <ul class="slides">
+            <li data-thumb="<?php echo get_bloginfo('template_directory'); ?>/dar_from_the_air-thumb.jpg"> <img src="<?php echo get_bloginfo('template_directory'); ?>/img/backgrounds/dar_from_the_air.jpg" alt="" class="slide_bg" /></li>
+            <li data-thumb="bg_1-thumb.jpg"> <img src="<?php echo get_bloginfo('template_directory'); ?>/img/bg_1.jpg" alt="" class="slide_bg" /></li>
+        </ul>
+    </div>
+</div>
+
+<!--//Slider-->
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search-wrap-1 ftco-animate p-4">
+                    <nav id="gtl-site-navigation" class="middle_nav">
+                        <div class="" id="middle_nav">
+                            <?php 
+                            wp_nav_menu(array(
+                              'theme_location' => 'tertiary',
+                              'menu_id'         => 'middle_nav',
+                              'menu_class'      => 'tertiary-items',
+                              'container-fluid'      => 'div',
+                              'container_class' => 'tertiary_menu',
+                              'walker'         => '',
+                              'fallback_cb'    => 'wp_page_menu',
+
+                            ));
+                            ?>
                         </div>
                     </nav>
 		        </div>
@@ -129,4 +137,5 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
 </section>
 
     </div>
-  <?php get_footer(); ?>
+    </div>
+    <?php get_footer(); ?> 
