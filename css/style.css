@@ -55,7 +55,6 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	line-height: 2.2rem;
-	background: #333;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden !important;
@@ -207,6 +206,7 @@ ul.list li {
 .search-wrap-1 {
 	margin-top: -40px;
 	margin-left: 280px;
+	margin-bottom: -15px;
 	
 }
 .middle_nav{

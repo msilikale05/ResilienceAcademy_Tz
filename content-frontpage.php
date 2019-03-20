@@ -10,7 +10,7 @@
        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/bg_1.jpg"
           alt="foss4g logo" /></a>
 </div>
-<section class="ftco-section ftco-no-pb ftco-no-pt">
+<section class="ftco-section ftco-no-pb ftco-no-pt" >
     	<div class="container">
 	    	<div class="row">
 					<div class="col-md-12">
@@ -93,7 +93,7 @@
    </div>
  </section>
 <section class="latest"> 
-<div class="container" style="padding-top:44px;">
+<div class="container" style="padding-top:44px; ">
 <div class="row">
     <?php
 $args = array( 'numberposts' => 3, 'order'=> 'DSC', 'orderby' => 'title' );
