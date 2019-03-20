@@ -99,3 +99,60 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     max-width: 100%;
 }
 }
+
+/* foot css */
+.site-footer {
+    margin: 400px 0 0 0;
+    padding: 150px 20px 0 20px;
+    background-color: #00a4dd;
+}
+
+.announce-card {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 40vh;
+    right: 50px;
+    z-index: 1000;
+    padding: 15px;
+
+    background-color: #e4d90f;
+    -webkit-box-shadow: 19px 20px 22px -10px rgba(247,234,13,0.42);
+    -moz-box-shadow: 19px 20px 22px -10px rgba(247,234,13,0.42);
+    box-shadow: 19px 20px 22px -10px rgba(247,234,13,0.42);
+}
+
+.footer-content {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+.footer-divider {
+    border-bottom: 2px solid;
+    width: 150px;
+    margin: 0 0 10px 10px;
+}
+
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-media div {
+    padding-bottom: 5px;
+}
+
+.footer-item-title {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+}
