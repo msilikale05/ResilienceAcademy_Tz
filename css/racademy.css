@@ -126,7 +126,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     width: 250px;
     position: absolute;
     top: 160vh;
-    right: 50px;
+    right: 30px;
     z-index: 1000;
     padding: 15px;
     background-color: #e4d90f;
@@ -194,4 +194,36 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 .blog-title {
     padding: 12px 24px;
+.footer-copyright {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.mission-page{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/bg_1.jpg");
+    height: 100vh;
+}
+
+.mission-title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    color: white;
+    padding: 100px 0 0 0;
+
+}
+
+.mission-row-one {
+    color: white
+}
+
+.mission-circle {
+    height: 100px;
+    width: 200px;
+    background-color: #1f1e4b;
+    border-radius: 50%;
 }
