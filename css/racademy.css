@@ -192,8 +192,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .container {
     padding: 2px 16px;
 }
+
 .blog-title {
     padding: 12px 24px;
+}
+
 .footer-copyright {
     background-color: black;
     text-align: center;
@@ -201,11 +204,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     padding: 10px;
 }
 
-.mission-page{
+.mission-page {
     display: flex;
     flex-direction: column;
     background-image: url("../img/bg_1.jpg");
     height: 100vh;
+    overflow: hidden;
 }
 
 .mission-title {
@@ -214,16 +218,75 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     font-weight: 600;
     color: white;
     padding: 100px 0 0 0;
-
 }
 
 .mission-row-one {
-    color: white
+    color: white;
+    margin-top: 34px;
 }
 
-.mission-circle {
-    height: 100px;
-    width: 200px;
-    background-color: #1f1e4b;
+.mission-rectangle {
+    background-color: #01244b;
+    width: 80%;
+    margin-left: 60px;
+}
+
+.mission-circle1, .mission-circle2, .mission-circle5, .mission-circle6 {
+    height: 150px;
+    width: 250px;
+    background-color: #01244b;
     border-radius: 50%;
+}
+
+.mission-circle1 {
+    box-shadow: 0px 20px #e4d90f;
+}
+
+.mission-circle2 {
+    box-shadow: 0px 20px #6049fa;
+}
+.mission-circle3, .mission-circle4 {
+    height: 200px;
+    width: 320px;
+    background-color: #01244b;
+    border-radius: 50%;
+}
+
+.mission-circle4 {
+    margin-left: 250px;
+    box-shadow: 0px 20px #00a4dc;
+}
+.mission-circle4 h2.text-center, .mission-circle3 h2.text-center{
+    padding: 65px;
+    font-size: 22px;
+}
+.mission-circle3 {
+    box-shadow: 0px 20px #ffa004;
+}
+.mission-circle5 {
+    box-shadow: 0px 20px #4dcb42;
+}
+.mission-circle6 {
+    box-shadow: 0px 20px #ff5403;
+}
+#mission {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: -38px;
+    font-weight: bolder;
+}
+
+.mission_words {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 54px 24px;
+    font-size: 26px;
+}
+
+.mission-row-two {
+    margin-left: 230px;
+    margin-top: 30px;
+}
+.mission-row-three{
+    margin-left: 230px;
 }

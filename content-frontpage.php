@@ -36,6 +36,62 @@
 	    	</div>
 	    </div>
     </section>
+    <section>
+    <div class="mission-page">
+        <div class="container">
+      <div class="mission-row-one" >
+      <div class="row">
+            <div class="col-md-3">
+              <div class="mission-circle1">
+           <h2 class="text-center"> Drone <br>imagery<br> competences</h2>
+          </div>
+          </div>   
+          <div class="col-md-6" >
+          <h1 id="mission">Mission</h1>  
+           <div class="mission-rectangle">
+           <h1 class="mission_words"> urban resilience <br>competences</h2>
+          </div>
+        </div>
+          <div class="col-md-3">
+              <div class="mission-circle2">
+           <h2 class="text-center"> Data <br> management  competition</h2>
+          </div>
+    </div>
+       </div>
+       </div>
+    </div>
+      <div class="mission-row-two" >
+      <div class="row">
+            <div class="col-md-6">
+              <div class="mission-circle3">
+              <h2 class="text-center"> Community <br>mapping<br> competences</h2>
+          </div>
+          </div>   
+          <div class="col-md-6">
+              <div class="mission-circle4">
+           <h2 class="text-center"> Resilience <br>visualization<br> competences</h2>
+          </div>
+       </div>
+       </div>
+    </div>
+    <div class="container">
+      <div class="mission-row-three" >
+      <div class="row">
+            <div class="col-md-6">
+              <div class="mission-circle5">
+           <h2 class="text-center"> climate change <br>& resilience<br> competences</h2>
+          </div>
+          </div>   
+          <div class="col-md-6">
+              <div class="mission-circle6">
+           <h2 class="text-center"> flood analysis<br>& prediction<br> competences</h2>
+          </div>
+    </div>
+       </div>
+       </div>
+    </div>
+   </div>
+ </section>
 <section class="latest"> 
 <div class="container" style="padding-top:44px;">
 <div class="row">
@@ -69,58 +125,7 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
 <?php endforeach; ?>
 </div>
 </div>  
+</section>
 
-    <div class="mission-page">
-      <div class="mission-title">Mission</div>
-      <div class="mission-row-one">
-          <div class="mission-circle">
-            DRONE IMAGERY COMPETITION
-          </div>
-      </div>
-      <div>Second row</div>
-      <div>Third row</div>
-    </div>
-    <section class="ftco-section services-section bg-light">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-yatch"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Activities</h3>
-                <p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-around"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Travel Arrangements</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-compass"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Private Guide</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-map-of-roads"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Location Manager</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </section>
     </div>
   <?php get_footer(); ?>

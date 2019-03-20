@@ -52,12 +52,14 @@ html {
 }
 
 body {
-	font-family: "Miriam Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	line-height: 2.2rem;
 	background: #333;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden !important;
+
 }
 
 ::selection {
@@ -231,3 +233,7 @@ ul.list li {
 	padding: 16px;
 	text-decoration: none;
   }
+h2.text-center {
+	text-transform: uppercase;
+	padding: 45px;
+}
