@@ -114,7 +114,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     height: 250px;
     width: 250px;
     position: absolute;
-    bottom: 40vh;
+    top: 160vh;
     right: 50px;
     z-index: 1000;
     padding: 15px;
