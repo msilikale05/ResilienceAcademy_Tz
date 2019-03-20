@@ -193,6 +193,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 .blog-title {
     padding: 12px 24px;
+}
 .footer-copyright {
     background-color: black;
     text-align: center;
@@ -225,4 +226,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     width: 200px;
     background-color: #1f1e4b;
     border-radius: 50%;
+}
+
+.mission-section {
+    background-image: url("../img/bg_1.jpg");
+    height: 70vh;
 }

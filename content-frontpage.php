@@ -36,6 +36,16 @@
 	    	</div>
 	    </div>
     </section>
+    <!-- mission section -->
+    <section class="mission-section">
+      <div class="mission-title">Mission</div>
+        <div class="mission-row-one">
+        <div class="mission-circle">
+          DRONE IMAGERY COMPETITION
+        </div>
+        </div>
+    </section>
+     <!-- end mission section -->
 <section class="latest"> 
 <div class="container" style="padding-top:44px;">
 <div class="row">
@@ -69,17 +79,6 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
 <?php endforeach; ?>
 </div>
 </div>  
-
-    <div class="mission-page">
-      <div class="mission-title">Mission</div>
-      <div class="mission-row-one">
-          <div class="mission-circle">
-            DRONE IMAGERY COMPETITION
-          </div>
-      </div>
-      <div>Second row</div>
-      <div>Third row</div>
-    </div>
     <section class="ftco-section services-section bg-light">
       <div class="container">
         <div class="row d-flex">
