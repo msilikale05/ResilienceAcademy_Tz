@@ -19,7 +19,7 @@ wp_enqueue_style( 'wp_theme_foss_4_g_dar-style', get_template_directory_uri() . 
 
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array ( 'jquery' ),true);
     wp_enqueue_script( 'modules', get_template_directory_uri() . '/js/modules.js', array ( 'jquery-ui-core', 'jquery' ), true);
-    // wp_enqueue_script( 'current', get_template_directory_uri() . '/js/current.js', array ( 'jquery-ui-core', 'jquery' ), true);
+    wp_enqueue_script( 'current', get_template_directory_uri() . '/js/current.js', array ( 'jquery-ui-core', 'jquery' ), true);
     wp_enqueue_script( 'countdown', get_template_directory_uri() . '/js/jquery.countdown.min.js', array ( 'jquery-ui-core', 'jquery' ), true);
      wp_enqueue_script( 'leaflet_js', get_template_directory_uri() . '/js/leaflet.js');
     wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
