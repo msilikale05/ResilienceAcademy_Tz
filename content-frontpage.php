@@ -94,6 +94,7 @@
  </section>
 <section class="latest"> 
 <div class="container" style="padding-top:44px; ">
+<h2 style="text-align: center;"> Recent News for resilience academy</h2>
 <div class="row">
     <?php
 $args = array( 'numberposts' => 3, 'order'=> 'DSC', 'orderby' => 'title' );

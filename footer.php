@@ -49,17 +49,18 @@
             </div>
         </div>
         <div>
-    </div>
-</div>
-</div>
-<div class="footer-copyright">
-    Copyright &copy;2019 Resilience Academy
-    </div>
-    <div class="announce-card">
+        <div class="announce-card">
         <p>Interested</p>
         <p>in Urban </p>
         <p>Resilience?</p>  
         <p style="margin-top: 50px ;">Check out!</p>
     </div>
-</body>
+</div>
+    </div>
+</div>
+
+<div class="footer-copyright">
+    Copyright &copy;2019 Resilience Academy
+    </div>
+   </body>
 </html>
