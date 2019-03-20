@@ -19,8 +19,8 @@
     box-sizing: border-box;
 }
 .navbar-inverse {
-    background-color: #ffffff; 
-    border-color: #fff;
+    background-color: #00a4dd; 
+    border-color: #00a4dd;
 }
 
 .navmenu ul li a {
@@ -59,4 +59,43 @@
     margin-top: 15px;
     font-weight: 700;
 
+}
+.logo  img {
+    width: 50px;
+    height: auto;
+    margin-left: 100px;
+}
+.slider_page img {
+    height: 900px;
+    width: 100%;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0 !important;
+}
+.ftco-no-pt {
+    padding-top: 0 !important;
+}
+.ftco-section {
+    padding: 7em 0;
+    position: relative;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.row {
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 768px){
+.col-md-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 }

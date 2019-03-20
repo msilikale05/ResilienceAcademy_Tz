@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
 		$(this).attr('src',newString+'?'+wmode+'&'+oldString);
 		}
 		else $(this).attr('src',ifr_source+'?'+wmode);
-	});
+	});z
 	
 	jQuery('.full_slider .flexslider li img.slide_bg').each(function(){
 		jQuery(this).parent().attr('style', 'background-image:url('+$(this).attr('src')+');');		

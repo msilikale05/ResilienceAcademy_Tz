@@ -19,13 +19,11 @@ wp_enqueue_style( 'wp_theme_foss_4_g_dar-style', get_template_directory_uri() . 
 
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array ( 'jquery' ),true);
     wp_enqueue_script( 'modules', get_template_directory_uri() . '/js/modules.js', array ( 'jquery-ui-core', 'jquery' ), true);
-    wp_enqueue_script( 'current', get_template_directory_uri() . '/js/current.js', array ( 'jquery-ui-core', 'jquery' ), true);
+    // wp_enqueue_script( 'current', get_template_directory_uri() . '/js/current.js', array ( 'jquery-ui-core', 'jquery' ), true);
     wp_enqueue_script( 'countdown', get_template_directory_uri() . '/js/jquery.countdown.min.js', array ( 'jquery-ui-core', 'jquery' ), true);
      wp_enqueue_script( 'leaflet_js', get_template_directory_uri() . '/js/leaflet.js');
     wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
     wp_enqueue_script( 'foss4g', get_template_directory_uri() . '/js/foss4g.js', array ( 'jquery-ui-core', 'jquery' ),  true);
-
-
 
 
 }	
@@ -41,6 +39,7 @@ function wpb_custom_new_menu() {
 register_nav_menus( array(
         'primary' => esc_html__( 'Primary', 'wp_theme_foss_4_g_dar' ),
         'secondary' => esc_html__( 'Secondary', 'wp_theme_foss_4_g_dar' ),
+        'tertiary' => esc_html__( 'Tertiary', 'wp_theme_foss_4_g_dar' ),
 
     ) );
 }
@@ -174,8 +173,8 @@ add_theme_support( 'custom-logo' );
 
 function foss4g2018_custom_logo_setup() {
     $defaults = array(
-        'height'      => 100,
-        'width'       => 400,
+        'height'      => 10,
+        'width'       => 50,
         'flex-height' => true,
         'flex-width'  => true,
         'header-text' => array( 'site-title', 'site-description' ),

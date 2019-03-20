@@ -29,12 +29,8 @@
         });
     });
 </script>
-<div class="wrapper">
     <header id="header">
-    <section class="js-include">
-         <div class="gtl-site-branding">
-                     <div class="">
-
+         <div class="wrapper">
                     <nav id="gtl-site-navigation" class="navmenu navbar navbar-inverse navbar-fixed-top">
                         <div class="container-fluid top">
             
@@ -54,12 +50,15 @@
                         </div>
                             </div>
                             <div class="container-fluid secondary">
+                            <div class="container ">
                             <div class="navbar-header">
+                            <div class="logo">
                             <?php 
                         if ( function_exists( 'the_custom_logo' ) ) {
                             the_custom_logo();
                         }
                          ?>
+                         </div>
                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -68,7 +67,6 @@
                                   </button> 
                          </div>
                          <div class="collapse navbar-collapse" id="secondary_nav">
-                            <div class="container ">
                            <?php 
                             wp_nav_menu( array( 
                                 'theme_location' => 'secondary', 
@@ -86,7 +84,6 @@
                         
                         </div>
                     </nav><!-- #ht-site-navigation -->
-                    </div>
-                </section>
-  
+      </div>
+ 
     </header>
