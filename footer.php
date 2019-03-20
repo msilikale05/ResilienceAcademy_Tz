@@ -6,33 +6,39 @@
 <header class="fixed-menu"></header>
 <?php wp_footer(); ?>
     <div class="site-footer">
-    <div class="announce-card">to be placed here the checkout content</div>
+
     <div class="footer-content">
         <div class="footer-item">
             <h4>University Partners</h4>
             <div  style="border-color: #f9a970" class="footer-divider"></div>
-            <p>
-            University of Dar es salaam <br/>Ardhi University <br/>Sokoine 
-            University of Agriculture<br/> State University of Zanzibar
-            </p>
+            <div class="footer-social-media">
+                <div> University of Dar es salaam</div>
+                <div> Ardhi University</div>
+                <div> Sokoine University of Agriculture</div>
+                <div> State University of Zanzibar</div>
+            </div>
         </div>
 
         <div class="footer-item">
-            <h4>Quick divnks</h4>
+            <h4>Quick Links</h4>
             <div style="border-color: #edd587" class="footer-divider"></div>
-                <p>
-                Tanzania Residivence Academy<br/>Urban Residivence Competence 
-                <br/>Training Modules<br/> News and Events
-                </p>
+            <div class="footer-social-media">
+                <div> Tanzania Resilience Academy</div>
+                <div> Urban Resilience Competency</div>
+                <div> Training Modules</div>
+                <div> News and Events</div>
+            </div>
         </div>
         
         <div class="footer-item">
             <h4>Connect - Community</h4>
             <div style="border-color: #f2623a" class="footer-divider"></div>
-                <p>
-                University of Turku, Finland <br/>Delft University 
-                <br/>Ramani Huria<br/>Humanitarian OpenStreetMap Team
-                </p>
+            <div class="footer-social-media">
+                <div> University of Turku, Finland</div>
+                <div> Delft University</div>
+                <div> Ramani Huria</div>
+                <div> Humanitarian OpenStreetMap Team</div>
+            </div>
         </div>
 
         <div class="footer-item">
@@ -46,5 +52,11 @@
         </div>
         <div>
     </div>
+    <div class="announce-card">
+        <p>Interested</p>
+        <p>in Urban </p>
+        <p>Resilience?</p>  
+        <p style="margin-top: 50px ;">Check out!</p>
+        </div>
 </body>
 </html>
