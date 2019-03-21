@@ -51,7 +51,7 @@
       <div class="row">
             <div class="col-md-3">
               <div class="mission-circle1">
-           <h2 class="text-center"> Drone <br>imagery<br> competences</h2>
+           <h2 class="text-center"> Drone <br>imagery<br></h2>
           </div>
           </div>   
           <div class="col-md-6" >
