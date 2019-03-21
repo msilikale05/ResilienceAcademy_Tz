@@ -77,7 +77,7 @@
           </div>   
           <div class="col-md-6">
               <div class="mission-circle4">
-           <h2 class="text-center"> Resilience <br>visualization<br> competences</h2>
+           <h2 class="text-center"> Resilience <br>visualization<br> </h2>
           </div>
        </div>
        </div>
@@ -87,12 +87,12 @@
       <div class="row">
             <div class="col-md-6">
               <div class="mission-circle5">
-           <h2 class="text-center"> climate change <br>& resilience<br> competences</h2>
+           <h2 class="text-center"> climate change <br>& resilience<br> </h2>
           </div>
           </div>   
           <div class="col-md-6">
               <div class="mission-circle6">
-           <h2 class="text-center"> flood analysis<br>& prediction<br> competences</h2>
+           <h2 class="text-center"> flood analysis<br>& prediction<br> </h2>
           </div>
     </div>
        </div>
