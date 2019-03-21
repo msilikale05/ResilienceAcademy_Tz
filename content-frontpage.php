@@ -57,12 +57,12 @@
           <div class="col-md-6" >
           <h1 id="mission">Mission</h1>  
            <div class="mission-rectangle">
-           <h1 class="mission_words"> urban resilience <br>competences</h2>
+           <h1 class="mission_words"> urban resilience <br></h2>
           </div>
         </div>
           <div class="col-md-3">
               <div class="mission-circle2">
-           <h2 class="text-center"> Data <br> management  competition</h2>
+           <h2 class="text-center"> Data <br> management </h2>
           </div>
     </div>
        </div>
@@ -72,7 +72,7 @@
       <div class="row">
             <div class="col-md-6">
               <div class="mission-circle3">
-              <h2 class="text-center"> Community <br>mapping<br> competences</h2>
+              <h2 class="text-center"> Community <br>mapping<br> </h2>
           </div>
           </div>   
           <div class="col-md-6">
