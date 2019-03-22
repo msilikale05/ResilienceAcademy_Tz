@@ -29,7 +29,7 @@
         });
     });
 </script>
-    <header id="header">
+    <header id="header" style="margin-top: 130px;">
          <div class="wrapper">
                     <nav id="gtl-site-navigation" class="navmenu navbar navbar-inverse navbar-fixed-top">
                         <div class="container-fluid top">
