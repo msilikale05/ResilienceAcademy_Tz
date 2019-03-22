@@ -321,19 +321,30 @@ section {
   margin: 0 0 0 100px;
 }
 
+.research-card {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #01244b;
+    min-height: 100px;
+    width: 350px;
+    padding: 16px;
+  }
+
 .module-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   color: #01244b;
   background-color: #fff;
-  height: 140px;
-  width: 280px;
+  min-height: 100px;
+  padding: 16px;
+  width: 350px;
   opacity: 0.9;
 }
 
 .module-card-title {
   text-align: center;
+  padding: 0 0 12px 0;
   font-size: 2em;
   font-weight: 600;
 }
