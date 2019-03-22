@@ -51,18 +51,18 @@
       <div class="row">
             <div class="col-md-3">
               <div class="mission-circle1">
-           <h2 class="text-center"> Drone <br>imagery<br> competences</h2>
+           <h2 class="text-center"> Drone <br>imagery<br></h2>
           </div>
           </div>   
           <div class="col-md-6" >
           <h1 id="mission">Mission</h1>  
            <div class="mission-rectangle">
-           <h1 class="mission_words"> urban resilience <br>competences</h2>
+           <h1 class="mission_words"> urban resilience <br></h2>
           </div>
         </div>
           <div class="col-md-3">
               <div class="mission-circle2">
-           <h2 class="text-center"> Data <br> management  competition</h2>
+           <h2 class="text-center"> Data <br> management </h2>
           </div>
     </div>
        </div>
@@ -72,12 +72,12 @@
       <div class="row">
             <div class="col-md-6">
               <div class="mission-circle3">
-              <h2 class="text-center"> Community <br>mapping<br> competences</h2>
+              <h2 class="text-center"> Community <br>mapping<br> </h2>
           </div>
           </div>   
           <div class="col-md-6">
               <div class="mission-circle4">
-           <h2 class="text-center"> Resilience <br>visualization<br> competences</h2>
+           <h2 class="text-center"> Resilience <br>visualization<br> </h2>
           </div>
        </div>
        </div>
@@ -87,12 +87,12 @@
       <div class="row">
             <div class="col-md-6">
               <div class="mission-circle5">
-           <h2 class="text-center"> climate change <br>& resilience<br> competences</h2>
+           <h2 class="text-center"> climate change <br>& resilience<br> </h2>
           </div>
           </div>   
           <div class="col-md-6">
               <div class="mission-circle6">
-           <h2 class="text-center"> flood analysis<br>& prediction<br> competences</h2>
+           <h2 class="text-center"> flood analysis<br>& prediction<br> </h2>
           </div>
     </div>
        </div>
