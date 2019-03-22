@@ -2,55 +2,71 @@
  /* The template for displaying all pages.
 
   */
- get_header();  ?>
-  <section class="js-include" id="branding" style="margin-top: 80px;">
-        <div class="container">
-            <div class="row">
-                <!-- logo -->
-                <div id="logo-foss4g" class="col-lg-4 text-center">
-                    <a href="index.php">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/FOSSG42018logo.svg" width="246"
-                             height="100" alt="foss4g logo"/></a>
-                </div>
-                <div id="logo-hot" class="col-lg-4 text-center">
-                    <a href="http://hotosm.org">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hot-logo.png "
-                             height="80" alt="HOT logo"/></a>
-                </div>
-                <div id="logo-osgeo" class="col-lg-4 text-center">
-                    <a href="http://osgeo.org">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo-osgeo.svg " width="246"
-                             height="100" alt="osgeo logo"/></a>
-                </div>
+get_header();  ?>
+<div class="education">
+    <div class="module-card-list">
+        <div class="module-card">
+            <div class="module-card-title">Module 1:</div>
+            <div class="module-card-content">
+                <p>Geonode Installation, documentation and maintenance routines</p>
             </div>
         </div>
-    </section>
-<div id="primary" class="content-area">
-<section class="blog-header">
- <div >
+        <div class="module-card">
+            <div class="module-card-title">Module 2:</div>
+            <div class="module-card-content">
+                <p>Geo-spatial data management and dissemination using geonode</p>
+            </div>
+        </div>
+        <div class="module-card">
+            <div class="module-card-title">Module 5:</div>
+            <div class="module-card-content">
+                <p>Climate change and flood resilience</p>
+            </div>
+        </div>
+    </div>
 
-                    <div class="section-title text-center">
-                        <h2 id="blog-title"><?php single_post_title(); ?></h2>
-                    </div>
-                 </div>
-                 </section>
-			<main itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage" id="main" class="site-main">
+    <div class="module-card-list">
+        <div class="module-card">
+            <div class="module-card-title">Module 3:</div>
+            <div class="module-card-content">
+                <p>Geo-spatial data visualization for
+                    resilience (Data challenge)</p>
+            </div>
+        </div>
+        <div class="module-card">
+            <div class="module-card-title">Module 4:</div>
+            <div class="module-card-content">
+                <p>Flood mapping, modeling and
+                    predictions</p>
+            </div>
+        </div>
+        <div class="module-card">
+            <div class="module-card-title">Module 7:</div>
+            <div class="module-card-content">
+                <p>Using drones and drone images in
+                    mapping and land use planning</p>
+            </div>
+        </div>
+    </div>
 
-				<?php
-				while ( have_posts() ) :
-					the_post();
+    <div class="module-card-list">
+        <div class="education-card">
+            <div class="module-card-title">EDUCATION</div>
+            <div class="module-card-content">
+                <p>We are derived by Sustainable Development
+                    Goals 11 by make all the cities inclusive, safe
+                    and Resilient.</p>
+            </div>
+        </div>
+        <div class="module-card">
+            <div class="module-card-title">Module 6:</div>
+            <div class="module-card-content">
+                <p>Community mapping and
+                    participatory GIS methods for
+                    improved resilience planning</p>
+            </div>
+        </div>
+    </div>
 
-						get_template_part( 'content', 'page' );
-
-					if ( comments_open() || '0' != get_comments_number() ) :
-
-						comments_template();
-
-						endif;
-
-					endwhile;
-				?>
-
-			</main><!-- #main -->
 </div>
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
