@@ -206,7 +206,9 @@ ul.list li {
 .search-wrap-1 {
 	margin-top: -40px;
 	margin-left: 280px;
-	margin-bottom: -15px;
+	margin-bottom: -6px;
+	z-index: 1000;
+
 	
 }
 .middle_nav{

@@ -45,6 +45,7 @@
 	    </div>
     </section>
     <section>
+    <div class="bg-image"></div>
     <div class="mission-page">
         <div class="container">
       <div class="mission-row-one" >
