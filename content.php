@@ -1,69 +1,34 @@
 
 
-<?php
-/**
- * Template part for displaying posts
- *
- */
-?>
+<?php ?>
+<section > 
+<div class="container" >
+<div class="row"  >
+    <?php
+    $args = array( 'numberposts' => 10, 'order'=> 'DSC', 'orderby' => 'title', 'category_name' => 'featured_news');
+    $postslist = get_posts( $args );
+    foreach ($postslist as $post) :  setup_postdata($post); ?> 
+ <div class="col-md-6">
+ <div class="card">
 
-<article class="post-page">
- <div  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
- <div class="text-center">
- <?php if(has_post_thumbnail()): ?>
-    <figure class="blog-img">
-        <a href="<?php the_permalink(); ?>">
-           <?php the_post_thumbnail( 'single-featured-post'); ?>
-        </a>
-    </figure>
-<?php endif;?> 
+ <div class="row" style="margin-top:45px;">
+ <div class="col-md-7">
+ <figure class="blog-img">
+  <?php the_post_thumbnail( 'single-featured'); ?>
+ </figure>
 </div>
-<div class="blog_details">
-  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<div class="col-md-5">
+<span class="article-feature_content"></span>
+        <h3 class="header_style"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <div class="blog">
+        <p><?php the_excerpt(); ?></p>
+        <p><time class="postdate"><?php echo get_the_date(); ?></time></p>
+    </div>
 </div>
- <div class="blog-content clearfix">
- <div class="auth">
-     <p>This post was written by <?php the_author(); ?>
-        <time class="postdate"><?php echo get_the_date(); ?></time>
-        </p>
-        </div>
-        <div class="blog-info">
-            <p><?php the_excerpt(); ?></p>
-  <a href="<?php the_permalink(); ?>" class="blog-link"><?php esc_attr_e('Read More ','wp_theme_foss_4_g_dar'); ?><i class="fa fa-long-arrow-right"></i></a>
-       </div>
-    </div> 
-
 </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div> 
+</div>
+<?php endforeach; ?>
+</div>
+</div>  
+</section>

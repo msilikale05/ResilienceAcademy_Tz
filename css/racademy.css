@@ -113,17 +113,20 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .announce-card {
-  color: white;
-  font-size: 2em;
-  font-weight: 600;
   height: 250px;
   width: 250px;
   padding: 15px;
   margin-top: -140px;
   background-color: #e4d90f;
-  -webkit-box-shadow: 19px 20px 22px -10px rgba(247, 234, 13, 0.42);
-  -moz-box-shadow: 15px 20px 22px -10px rgba(247, 234, 13, 0.42);
-  box-shadow: 15px 20px 22px -10px rgba(247, 234, 13, 0.42);
+  -webkit-box-shadow: 10px 5px 22px 10px #6b6b67d1;
+  -moz-box-shadow: 10px 5px 22px 10px #6b6b67d1;
+  box-shadow: 5px 5px 15px 6px #6b6b67d1;
+}
+
+.announce-card>h2 {
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 2px #696464b5;
 }
 
 .footer-content {
@@ -181,7 +184,18 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .blog-title {
-  padding: 12px 24px;
+  padding: 0 20px;
+}
+
+.blog-title h3 {
+  margin-top: 15px 0 0 0;
+}
+
+.blog-info>p {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-copyright {
@@ -298,10 +312,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 /* Education page */
 
 .education {
-  display: flex;
   justify-content: space-evenly;
-  background-image: url("../img/bg_1.jpg");
-  height: 80vh;
+  background-image: url("../img/bgs/educa.jpg");
+  height: 100vh;
   display: flex;
 }
 

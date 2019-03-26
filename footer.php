@@ -50,10 +50,7 @@
         </div>
         <div>
         <div class="announce-card">
-        <p>Interested</p>
-        <p>in Urban </p>
-        <p>Resilience?</p>  
-        <p style="margin-top: 50px ;">Check out!</p>
+        <h2>Interested<br>in Urban <br/>Resilience?<br/> <br> Check out!<h2>
     </div>
 </div>
     </div>
