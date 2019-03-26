@@ -129,7 +129,7 @@ foreach ($postslist as $post) :  setup_postdata($post); ?>
 			<?php else : ?>
 				<?php the_excerpt(); ?>
 			<?php endif; ?>
-    <a href="<?php the_permalink(); ?>" class="blog-link">
+    <p class="blog-link"><a href="<?php the_permalink(); ?>" >
         <?php esc_attr_e('Read More ','wp_theme_foss_4_g_dar'); ?>
       <i class="fa fa-long-arrow-right"></i></a>
       </p>
