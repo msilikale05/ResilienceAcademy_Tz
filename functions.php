@@ -10,8 +10,8 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'wp_theme_foss_4_g_dar-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css','1.0',true );
 wp_enqueue_style( 'wp_theme_foss_4_g_dar-slick', get_template_directory_uri() . '/css/slick.css"',true );
 wp_enqueue_style( 'wp_theme_foss_4_g_dar-plugins', get_template_directory_uri() . '/css/plugins.css"',true );
-wp_enqueue_style( 'wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/racademy.css"',true );
-// wp_enqueue_style( 'wp_theme_foss_4_g_dar-addition', get_template_directory_uri() . '/css/addition.css"',true );
+wp_enqueue_style( 'wp_theme_foss_4_g_dar-racademy', get_template_directory_uri() . '/css/racademy.css"',true );
+wp_enqueue_style( 'wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/blog.css"',true );
 wp_enqueue_style( 'wp_theme_foss_4_g_dar-style', get_template_directory_uri() . '/css/style.css"',true );
  wp_enqueue_style( 'leaflet_css', get_template_directory_uri() . '/css/leaflet.css');
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', array ( ), true);
@@ -58,10 +58,6 @@ define(SINGLE_PATH, TEMPLATEPATH . '/single');
 $post_date = get_the_date( 'l F j, Y' ); echo $post_date;
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 250, 250);
-// add_image_size( 'single-feature-thumbnai', 350, 228, true );
-// add_image_size( 'single-featured-post', 0, 0, true  );
-// add_image_size( 'single-featured', 380, 0, true  );
-
 
 
 $args = array(
@@ -182,6 +178,16 @@ function foss4g2018_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'the_custom_logo_custom_logo_setup' );
+/**
+ * Change the excerpt length
+ */
+function ra_excerpt_length( $length ) {
+	
+	$excerpt = get_theme_mod('exc_lenght', '30');
+	return $excerpt;
+
+}
+add_filter( 'excerpt_length', 'ra_excerpt_length', 999 );
 
 /**
  * Function to check if version 1.8.5 or less has been previously installed.
@@ -197,6 +203,5 @@ function wp_theme_foss_4_g_dar_check_if_old_version_of_theme() {
     }
     return false;
 }
-
 
 ?>

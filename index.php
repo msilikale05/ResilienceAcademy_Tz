@@ -13,101 +13,44 @@
 
  */
 get_header(); ?>
-  <section class="js-include" id="branding" style="margin-top: 80px;">
-        <div class="container">
-            <div class="row">
-                <!-- logo -->
-                <div id="logo-foss4g" class="col-lg-4 text-center">
-                    <a href="index.php">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/FOSSG42018logo.svg" width="246"
-                             height="100" alt="foss4g logo"/></a>
-                </div>
-                <div id="logo-hot" class="col-lg-4 text-center">
-                    <a href="http://hotosm.org">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/hot-logo.png "
-                             height="80" alt="HOT logo"/></a>
-                </div>
-                <div id="logo-osgeo" class="col-lg-4 text-center">
-                    <a href="http://osgeo.org">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo-osgeo.svg " width="246"
-                             height="100" alt="osgeo logo"/></a>
-                </div>
-            </div>
-        </div>
-    </section>
-<div class="clear"></div>
-
+  <div class="clear"></div>
 </header> 
-<div class="intro-banner3">
-	<div class="container">
-
-		<h2>
-			
-			<?php 
-			echo esc_attr(get_bloginfo( 'description', 'display' ));
-			 ?>
-		</h2>
-	</div>
+<div class="event intro-banner3 overlay">
+	<h2 class="news">Events <span class='special'>&</span> News</h2>
 </div>
 
- <?php do_action('wp_theme_foss_4_g_dar__action_breadcrumb'); ?>
-<div class="cart-section-lst section-padding white-bg"> 
-   <img id="headering" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="Header image alt text" />
 
+<?php do_action('wp_theme_foss_4_g_dar__action_breadcrumb'); ?>
+<div class="cart-section-lst section-padding white-bg"> 
+<div class="container" style="margin-top:25px;">
+	<h2 class="featured-news">Feature News</h2>	
+	   <!-- <img id="headering" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="Header image alt text" /> -->
         <?php
 		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<div class="container-fluid blog-header">
-
-					<div class="section-title text-center">
-		                <h2 id="blog-title"><?php single_post_title(); ?></h2>
-		            </div>
-		         </div>
-	<div class="container">
-            <div class="row">
-			<?php
+			if ( (get_theme_mod('full_content') == 1) && is_home() ) : ?>
+			 <?php
 			endif;
-			?>
-			<?php get_sidebar(); ?>
-
-			<div class="col-md-12 col-sm-12  blog-wrap">
-			<?php
+			?>	
+				<?php
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			if ( have_posts() ) : the_post();
 			?>
-                <?php
-		                /*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-
-					endwhile;
+				<?php
+				
+				get_template_part( 'content', get_post_format() );
+		endif;
 					?>
 					<div class="clearfix"></div>
 					<?php
-
-					/**
-					 * Hook - nature_bliss_action_posts_navigation.
-					 *
-					 * @hooked: nature_bliss_custom_posts_navigation - 10
-					 */
 					do_action( 'wp_theme_foss_4_g_dar__action_posts_navigation' );
 
 				else :
 
 					get_template_part( 'content', 'none' );
+				
 
 				endif; ?>
-				</div>
-
-
-             
-            </div>
-
-            
+			            
         </div>
 </div>
     <!-- cart list section end -->

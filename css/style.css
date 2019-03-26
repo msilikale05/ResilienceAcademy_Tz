@@ -58,19 +58,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden !important;
-
 }
-
-::selection {
-	background: #5b93b8;
-	color: #ffffff;
-}
-
-::-moz-selection {
-	background: #5b93b8;
-	color: #ffffff;
-}
-
 .wrapper {
 	overflow: hidden;
 }
@@ -80,14 +68,14 @@ h4 a {
 	font-weight: 600;
 	text-decoration: none !important;
 }
-h3 a{
+
+h3 a {
 	color: #333333;
 }
 
 a:hover {
 	color: #00a4dd;
 	text-decoration-line: none;
-
 }
 
 strong {
@@ -173,34 +161,21 @@ ul.list li {
 
 /* Responsive changes */
 
-@media only screen and (max-width: 767px) {
-	#top header {
-		position: fixed;
-		width: 100%;
-		z-index: 999;
-		top: 0;
-		left: 0;
-		background: #eaeaea;
-	}
-	#top header nav {
-		display: none !important;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.container {
-		width: 1200px;
-	}
-}
-.search-wrap-1 {
-    position: relative;
-    -webkit-box-shadow: 0px 75px 94px -66px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 0px 75px 94px -66px rgba(0, 0, 0, 0.66);
-    box-shadow: 0px 75px 94px -66px rgba(0, 0, 0, 0.66);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
+.search-wrap-1,.search-wrap-2 {
+	position: relative;
+	-webkit-box-shadow: 0px 75px 94px -66px rgba(0, 0, 0, 0.66);
+	-moz-box-shadow: 0px 75px 94px -66px rgba(0, 0, 0, 0.66);
+	box-shadow: 0px 75px 94px -66px rgba(0, 0, 0, 0.66);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
 	border-radius: 5px;
+}
+.search-wrap-2 {
+    margin-top: -25px;
+    margin-left: 280px;
+    z-index: 1000;
+    margin-bottom: -35px;
 
 }
 .search-wrap-1 {
@@ -208,33 +183,33 @@ ul.list li {
 	margin-left: 280px;
 	margin-bottom: -6px;
 	z-index: 1000;
-
-	
 }
-.middle_nav{
+
+.middle_nav {
 	display: block;
 }
+
 .middle_nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-  }
-  
-  .middle_nav li {
-	float: left;
-	border-left: 1px solid #232931 ;
-	background: #00a4dd;
+}
 
-  }
-  
-  .middle_nav li a {
+.middle_nav li {
+	float: left;
+	border: 1px solid #232931;
+	background: #00a4dd;
+}
+
+.middle_nav li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 16px;
 	text-decoration: none;
-  }
+}
+
 h2.text-center {
 	text-transform: uppercase;
 	padding: 45px;
