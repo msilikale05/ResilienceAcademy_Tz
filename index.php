@@ -21,6 +21,7 @@ get_header(); ?>
 
 
 <?php do_action('wp_theme_foss_4_g_dar__action_breadcrumb'); ?>
+<section>
 <div class="cart-section-lst section-padding white-bg"> 
 <div class="container" style="margin-top:25px;">
 	<h2 class="featured-news">Feature News</h2>	
@@ -48,14 +49,40 @@ get_header(); ?>
 
 					get_template_part( 'content', 'none' );
 				
-
 				endif; ?>
 			            
         </div>
 </div>
+<div class="container upcoming_events">
+		<?php
+		if ( have_posts() ) :
+			if ( is_home() ) : ?>
+			 <?php
+			endif;
+			?>	
+				<?php
+			/* Start the Loop */
+			if ( have_posts() ) : the_post();
+			?>
+				<?php
+				
+				get_template_part( 'events-and-news', get_post_format() );
+		endif;
+					?>
+					<div class="clearfix"></div>
+					<?php
+					do_action( 'wp_theme_foss_4_g_dar__action_posts_navigation' );
+
+				else :
+
+					get_template_part( 'events-and-news', 'none' );
+				
+
+				endif; ?>	
+</div>	
+</section>
     <!-- cart list section end -->
 <nav class="text-center">
-<?php pagination_bar(); ?>
 </nav>
 
     <?php get_footer();?>

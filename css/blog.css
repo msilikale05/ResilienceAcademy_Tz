@@ -120,3 +120,19 @@ h3::after, .article-feature_content h3::after{
     border-bottom:1px solid #e4e2e2;
 }
 }
+.container.upcoming_events{
+    position: relative;
+    top: 25;
+    margin-bottom: 44px;
+}
+.events-news{
+    display: flex;
+}
+.event-date{
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 45;
+    left: 30;
+    color: #ff5403;
+}

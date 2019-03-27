@@ -190,12 +190,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .blog-title h3 {
   margin-top: 15px 0 0 0;
 }
-
-.blog-info>p {
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.blog-link{
+  padding-bottom: 15px;
 }
 
 .footer-copyright {
@@ -219,7 +215,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .mission-page {
   position: absolute;
-  transform: translate(19%, -120%);
+  transform: translate(25%, -120%);
 }
 
 .mission-title {
