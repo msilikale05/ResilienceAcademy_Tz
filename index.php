@@ -49,26 +49,11 @@ get_header(); ?>
 
 					get_template_part( 'content', 'none' );
 				
-
 				endif; ?>
 			            
         </div>
 </div>
 <div class="container upcoming_events">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<h2 class="featured-news">Upcoming Events</h2>
-				<p>
-				Lorem Ipsum is simply dummy text of the
-				printing and typesetting industry. Lorem
-				Ipsum has been the industry's standard
-				dummy text ever since the 1500s, when an
-				unknown printer took a galley of type and
-				scrambled it to make a type specimen book.
-				</p>
-				<button class="btn btn-default"> Full calender</button>	
-		</div>
-		<div class="col-md-6 col-md-offset-2 col-sm-12">
 		<?php
 		if ( have_posts() ) :
 			if ( is_home() ) : ?>
@@ -94,8 +79,6 @@ get_header(); ?>
 				
 
 				endif; ?>	
-		</div>
-	</div>
 </div>	
 </section>
     <!-- cart list section end -->

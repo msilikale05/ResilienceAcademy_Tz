@@ -123,16 +123,16 @@ h3::after, .article-feature_content h3::after{
 .container.upcoming_events{
     position: relative;
     top: 25;
-    margin-bottom: 34px;
+    margin-bottom: 44px;
 }
 .events-news{
     display: flex;
 }
 .event-date{
-    font-size: 56;
+    font-size: 30px;
     font-weight: 700;
     position: relative;
-    top: 70;
-    right: 10;
+    top: 45;
+    left: 30;
     color: #ff5403;
 }

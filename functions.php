@@ -189,6 +189,30 @@ function ra_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'ra_excerpt_length', 999 );
 
+add_action('init', 'events_init');
+
+function events_init() {
+	$args = array(
+		'labels' => array(
+			'name' => __('Events'),
+            'singular_name' => __('Event'),
+            'add_new' => ('Add New'),
+            'edit_item' => ('Edit Event'),
+            'menu_name' => ('Events'),
+            'all_items' => ('All Events'),
+
+		),
+		'public' => true,
+		'rewrite' => array("slug" => "events"), 
+        'supports' => array('thumbnail','editor','title','custom-fields'),
+        'taxonomies' => array( 'post_tag', 'category' ),
+        'capability_type' => 'post',
+
+	);
+
+	register_post_type( 'events' , $args );
+}
+
 /**
  * Function to check if version 1.8.5 or less has been previously installed.
  */
