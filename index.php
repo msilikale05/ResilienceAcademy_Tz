@@ -83,7 +83,6 @@ get_header(); ?>
 </section>
     <!-- cart list section end -->
 <nav class="text-center">
-<?php pagination_bar(); ?>
 </nav>
 
     <?php get_footer();?>
