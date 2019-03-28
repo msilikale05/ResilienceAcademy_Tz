@@ -315,6 +315,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .mission-page {
   display: flex;
   flex-direction: column;
+  position: absolute;
   transform: translate(0, -100vh);
 }
 
