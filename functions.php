@@ -76,7 +76,7 @@ function page_widgets_init()
 
     //Register the front page widgets
     if (function_exists('siteorigin_panels_activate')) {
-        register_widget('Moesia_Edgar');
+        register_widget('Widget_Mission');
     }
 }
 add_action('widgets_init', 'page_widgets_init');
