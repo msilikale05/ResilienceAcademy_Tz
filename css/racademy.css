@@ -216,98 +216,6 @@ section {}
   background-size: cover;
 }
 
-.mission-page {
-  position: absolute;
-  transform: translate(25%, -120%);
-}
-
-.mission-title {
-  text-align: center;
-  font-size: 3em;
-  font-weight: 600;
-  color: white;
-  padding: 100px 0 0 0;
-}
-
-.mission-row-one {
-  color: white;
-}
-
-.mission-row-two {
-  margin-top: 30px;
-}
-
-.mission-row-three {
-  margin-left: 180px;
-  margin-top: 20px;
-}
-
-.mission-rectangle {
-  background-color: #01244b;
-  width: 80%;
-  margin-left: 60px;
-}
-
-.mission-circle1, .mission-circle2, .mission-circle5, .mission-circle6 {
-  height: 150px;
-  width: 250px;
-  background-color: #01244b;
-  border-radius: 50%;
-}
-
-.mission-circle1 {
-  box-shadow: 0px 20px #e4d90f;
-}
-
-.mission-circle2 {
-  box-shadow: 0px 20px #6049fa;
-}
-
-.mission-circle3, .mission-circle4 {
-  height: 170px;
-  width: 290px;
-  background-color: #01244b;
-  border-radius: 50%;
-}
-
-.mission-circle4 {
-  margin-left: 250px;
-  box-shadow: 0px 20px #00a4dc;
-}
-
-.mission-circle4 h2.text-center, .mission-circle3 h2.text-center {
-  padding: 65px;
-  font-size: 22px;
-}
-
-.mission-circle3 {
-  box-shadow: 0px 20px #ffa004;
-}
-
-.mission-circle5 {
-  box-shadow: 0px 20px #4dcb42;
-}
-
-.mission-circle6 {
-  box-shadow: 0px 20px #ff5403;
-  margin-right: 20px;
-}
-
-#mission {
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: -38px;
-  font-weight: bolder;
-}
-
-.mission_words {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 54px 24px;
-  font-size: 26px;
-  line-height: 1.6;
-}
-
 /* Education page */
 
 .education, .research {
@@ -332,10 +240,6 @@ section {}
 
 .education-card h3, .research-card h3 {
   text-transform: uppercase;
-}
-
-.research-card {
-  margin: 0 0 55px 155px;
 }
 
 .module-card {
@@ -370,17 +274,22 @@ section {}
 .education .col-md-4 {
   margin-bottom: 15px;
 }
-
-.research .col-md-4 {
-  margin-bottom: 25px;
-}
-
 .modules .row {
   height: 600px;
   display: -webkit-flex;
   -webkit-flex-flow: column-reverse wrap;
   display: flex;
   flex-flow: column wrap;
+}
+
+/* research start */
+
+.research-card {
+  margin: 0 0 55px 25px;
+}
+
+.research .col-md-4 {
+  margin-bottom: 25px;
 }
 
 .research_modules {
@@ -394,4 +303,61 @@ section {}
   -webkit-flex-flow: row-reverse wrap;
   display: flex;
   flex-flow: row-reverse wrap;
+}
+
+/* mission section */
+.mission-circle {
+  height: 150px;
+  width: 250px;
+  background-color: #01244b;
+  border-radius: 50%;
+  box-shadow: 0px 20px  #00a4dd;
+}
+
+#mission {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: -38px;
+  font-weight: bolder;
+}
+
+.mission_words {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 54px 24px;
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+.mission-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.mission-item {
+  width: 20vw;
+  padding: 70px 0 0 0;
+}
+
+.mission-page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(0, -100vh);
+}
+
+.mission-title {
+ padding: 36px 0 0 0;
+  color: white;
+}
+
+
+
+.mission-rectangle {
+  background-color: #01244b;
+  width: 30%;
+  margin: auto;
 }

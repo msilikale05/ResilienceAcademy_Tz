@@ -80,66 +80,48 @@ function widget($args, $instance)
     $r = new WP_Query(apply_filters('widget_posts_args', array(
         'no_found_rows'       => true,
         'post_status'         => 'publish',
-        'post_type'           => 'post',
+        'post_type'           => 'mission',
         'posts_per_page'      => $number
     )));
 
     if ($r->have_posts()) :
         ?>
+<!-- <div class="mission-section">
+    <div class="mission-title">
+        <h1 id="mission"><?php echo $title; ?></h1>
+        <div class="mission-rectangle">
+            <h1 class="mission_words"> <?php echo $description; ?><br></h2>
+        </div>
+    </div>
+    <div class="mission-content">
+    <?php while ($r->have_posts()) : $r->the_post(); ?>
+    <div class="mission-item">
+        <div class="mission-circle1">
+            <h2 class="text-center"><?php echo get_the_title(); ?></h2>
+        </div>
+    </div>
+    <?php endwhile; ?>
+    </div>
+</div> -->
+
 <div class="mission-page">
-    <div class="container">
-        <div class="mission-row-one">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="mission-circle1">
-                        <h2 class="text-center"> Drone <br>imagery<br></h2>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h1 id="mission"><?php echo $title; ?></h1>
-                    <div class="mission-rectangle">
-                        <h1 class="mission_words"> <?php echo $description; ?><br></h2>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="mission-circle2">
-                        <h2 class="text-center"> Data <br> management </h2>
-                    </div>
-                </div>
-            </div>
+    <div class="mission-title">
+        <h1 id="mission"><?php echo $title; ?></h1>
+        <div class="mission-rectangle">
+            <h1 class="mission_words"> <?php echo $description; ?><br></h2>
         </div>
     </div>
-    <div class="mission-row-two">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="mission-circle3">
-                    <h2 class="text-center"> Community <br>mapping<br> </h2>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="mission-circle4">
-                    <h2 class="text-center"> Resilience <br>visualization<br> </h2>
-                </div>
-            </div>
+    <div class="mission-content">
+    <?php while ($r->have_posts()) : $r->the_post(); ?>
+    <div class="mission-item">
+        <div class="mission-circle">
+            <h2 class="text-center"><?php echo get_the_title(); ?></h2>
         </div>
     </div>
-    <div class="container">
-        <div class="mission-row-three">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mission-circle5">
-                        <h2 class="text-center"> climate change <br>& resilience<br> </h2>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mission-circle6">
-                        <h2 class="text-center"> flood analysis<br>& prediction<br> </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <?php endwhile; ?>
     </div>
 </div>
+
 <?php
         // Reset the global $the_post as this query will have stomped on it
 wp_reset_postdata();
