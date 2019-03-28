@@ -1,13 +1,13 @@
 <?php
 
-class Moesia_Edgar extends WP_Widget
+class Widget_Mission extends WP_Widget
 {
 
     // constructor
     function __construct()
     {
         $widget_ops = array('classname' => 'moesia_services_widget', 'description' => __('Show what services you are able to provide.', 'moesia'));
-        parent::__construct(false, $name = __('Moesia FP: Edgar', 'moesia'), $widget_ops);
+        parent::__construct(false, $name = __('Resilience Academy: Mission', 'moesia'), $widget_ops);
         $this->alt_option_name = 'moesia_services_widget';
     }
 
@@ -48,7 +48,7 @@ function widget($args, $instance)
     echo $args['before_widget'];
     $cache = array();
     if (!$this->is_preview()) {
-        $cache = wp_cache_get('edgar_services', 'widget');
+        $cache = wp_cache_get('mission_services', 'widget');
     }
 
     if (!is_array($cache)) {
@@ -148,7 +148,7 @@ endif;
 
 if (!$this->is_preview()) {
     $cache[$args['widget_id']] = ob_get_flush();
-    wp_cache_set('edgar_services', $cache, 'widget');
+    wp_cache_set('mission_services', $cache, 'widget');
 } else {
     ob_end_flush();
 }
