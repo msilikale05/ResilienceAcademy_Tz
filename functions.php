@@ -78,7 +78,7 @@ function page_widgets_init()
     if (function_exists('siteorigin_panels_activate')) {
         register_widget('Widget_Mission');
         register_widget('Widget_Education');
-
+        register_widget('Widget_Research');
     }
 }
 add_action('widgets_init', 'page_widgets_init');
@@ -89,6 +89,7 @@ add_action('widgets_init', 'page_widgets_init');
 if (function_exists('siteorigin_panels_activate')) {
     require get_template_directory() . "/widgets/mission.php";
     require get_template_directory() . "/widgets/education.php";
+    require get_template_directory() . "/widgets/research.php";
 
 }
 
@@ -135,9 +136,26 @@ function custom_posts() {
         'supports' => array('thumbnail','editor','title','custom-fields'),
         'taxonomies' => array( 'post_tag', 'category' ),
         'capability_type' => 'post',
+    );
+    $argsresearch = array(
+		'labels' => array(
+			'name' => __('Research'),
+            'singular_name' => __('Research'),
+            'add_new' => ('Add New'),
+            'edit_item' => ('Edit Research'),
+            'menu_name' => ('Research'),
+            'all_items' => ('All Research'),
+
+		),
+		'public' => true,
+		'rewrite' => array("slug" => "research"), 
+        'supports' => array('thumbnail','editor','title','custom-fields'),
+        'taxonomies' => array( 'post_tag', 'category' ),
+        'capability_type' => 'post',
 	);
     register_post_type( 'events' , $args );
-	register_post_type( 'education' , $argseducation );
+    register_post_type( 'education' , $argseducation );
+    register_post_type( 'research' , $argsresearch );
 }
 
 /**

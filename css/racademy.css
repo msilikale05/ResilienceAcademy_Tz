@@ -318,7 +318,7 @@ section{
 
 }
 
-.education-card {
+.education-card, .research-card{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -326,7 +326,7 @@ section{
   background-color: #01244b;
   width: 400px;
 }
-.education-card h3{
+.education-card h3, .research-card h3{
   text-transform: uppercase;
 }
 

@@ -1,13 +1,13 @@
 <?php
 
-class Widget_Education extends WP_Widget
+class Widget_Research extends WP_Widget
 {
 
     // constructor
     function __construct()
     {
         $widget_ops = array('classname' => 'moesia_services_widget', 'description' => __('Show what services you are able to provide.', 'moesia'));
-        parent::__construct(false, $name = __('Resilience Academy: Education', 'moesia'), $widget_ops);
+        parent::__construct(false, $name = __('Resilience AResearch', 'moesia'), $widget_ops);
         $this->alt_option_name = 'moesia_services_widget';
     }
 
@@ -37,7 +37,7 @@ class Widget_Education extends WP_Widget
 function update($new_instance, $old_instance)
 {
     $instance = $old_instance;
-    $instance['title']             = strip_tags($new_instance['title']);
+    $instance['title']  = strip_tags($new_instance['title']);
 
     return $instance;
 }
@@ -48,7 +48,7 @@ function widget($args, $instance)
     echo $args['before_widget'];
     $cache = array();
     if (!$this->is_preview()) {
-        $cache = wp_cache_get('education_services', 'widget');
+        $cache = wp_cache_get('research_services', 'widget');
     }
 
     if (!is_array($cache)) {
@@ -67,7 +67,7 @@ function widget($args, $instance)
     ob_start();
     extract($args);
 
-    $title = (!empty($instance['title'])) ? $instance['title'] : __('EDUCATION', 'moesia');
+    $title = (!empty($instance['title'])) ? $instance['title'] : __('RESEARCH', 'moesia');
     $description = (!empty($instance['description'])) ? $instance['description'] : __('URBAN RESILIENCE', 'moesia');
 
     /** This filter is documented in wp-includes/default-widgets.php */
@@ -76,18 +76,8 @@ function widget($args, $instance)
     $number = -1;
         ?>
         
-<section class="education">
-    <div class="row">
-    <div class="col-md-5 col-md-offset-7">
-        <div class="education-card" style="margin-top:35px;">
-            <h3 class="module-card-title"> <?php echo $title ?></h3>
-            <div class="module-card-content">
-            <p><?php echo $description ?></p>
-           </div>
-        </div>
-       </div>
-    </div>
-  <?php query_posts( 'post_type=education&slug=education&orderby=meta_value&order=ASC'); ?>
+<section class="research">
+     <?php query_posts( 'post_type=research&slug=research&orderby=meta_value&order=ASC'); ?>
   <div class="modules">
   <div class="row">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -98,8 +88,18 @@ function widget($args, $instance)
            </div>
        </div>
       <?php endwhile; else: ?>
-              <h3>Sorry, no modules for education!</h4>
+              <h3>Sorry, no research!</h4>
             <?php endif; ?>
+            <div class="row">
+    <div class="col-md-5 col-md-offset-7">
+        <div class="research-card" style="margin-top:35px;">
+            <h3 class="module-card-title"> <?php echo $title ?></h3>
+            <div class="module-card-content">
+            <p><?php echo $description ?></p>
+           </div>
+        </div>
+       </div>
+    </div>
       <?php wp_reset_query(); ?>
       </div>
       </div>
@@ -111,7 +111,7 @@ wp_reset_postdata();
 
 if (!$this->is_preview()) {
     $cache[$args['widget_id']] = ob_get_flush();
-    wp_cache_set('education_services', $cache, 'widget');
+    wp_cache_set('research_services', $cache, 'widget');
 } else {
     ob_end_flush();
 }
