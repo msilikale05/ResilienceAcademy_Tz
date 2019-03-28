@@ -7,7 +7,7 @@ class Widget_Research extends WP_Widget
     function __construct()
     {
         $widget_ops = array('classname' => 'moesia_services_widget', 'description' => __('Show what services you are able to provide.', 'moesia'));
-        parent::__construct(false, $name = __('Resilience AResearch', 'moesia'), $widget_ops);
+        parent::__construct(false, $name = __('Resilience Academy:Research', 'moesia'), $widget_ops);
         $this->alt_option_name = 'moesia_services_widget';
     }
 
@@ -74,11 +74,12 @@ function widget($args, $instance)
     $title = apply_filters('widget_title', $title, $instance, $this->id_base);
     $description = apply_filters('widget_description', $description, $instance, $this->id_base);
     $number = -1;
-        ?>
+   
+  ?>
         
 <section class="research">
-     <?php query_posts( 'post_type=research&slug=research&orderby=meta_value&order=ASC'); ?>
-  <div class="modules">
+     <?php query_posts( 'post_type=research&slug=research&orderby=meta_value&order=DSC'); ?>
+  <div class="research_modules" >
   <div class="row">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="col-md-4">
@@ -90,21 +91,17 @@ function widget($args, $instance)
       <?php endwhile; else: ?>
               <h3>Sorry, no research!</h4>
             <?php endif; ?>
-            <div class="row">
-    <div class="col-md-5 col-md-offset-7">
-        <div class="research-card" style="margin-top:35px;">
+            <?php wp_reset_query(); ?>
+      </div>
+      <div class="research-card">
             <h3 class="module-card-title"> <?php echo $title ?></h3>
             <div class="module-card-content">
             <p><?php echo $description ?></p>
            </div>
         </div>
-       </div>
-    </div>
-      <?php wp_reset_query(); ?>
-      </div>
-      </div>
+     </div>     
      </section>
-     
+    
 <?php
         // Reset the global $the_post as this query will have stomped on it
 wp_reset_postdata();

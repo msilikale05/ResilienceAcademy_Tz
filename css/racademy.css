@@ -95,9 +95,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   margin-right: -15px;
   margin-left: -15px;
 }
-section{
 
-}
+section {}
+
 @media (min-width: 768px) {
   .col-md-12 {
     -webkit-box-flex: 0;
@@ -192,7 +192,8 @@ section{
 .blog-title h3 {
   margin-top: 15px 0 0 0;
 }
-.blog-link{
+
+.blog-link {
   padding-bottom: 15px;
 }
 
@@ -309,16 +310,18 @@ section{
 
 /* Education page */
 
-.education {
+.education, .research {
   justify-content: space-evenly;
   background-image: url("../img/bgs/educa.jpg");
   height: auto;
-  margin-top: -6px;
   overflow-x: hidden !important;
-
 }
 
-.education-card, .research-card{
+.education {
+  margin-top: -6px;
+}
+
+.education-card, .research-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -326,18 +329,13 @@ section{
   background-color: #01244b;
   width: 400px;
 }
-.education-card h3, .research-card h3{
+
+.education-card h3, .research-card h3 {
   text-transform: uppercase;
 }
 
 .research-card {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  background-color: #01244b;
-  min-height: 100px;
-  width: 350px;
-  padding: 16px;
+  margin: 0 0 55px 155px;
 }
 
 .module-card {
@@ -347,8 +345,7 @@ section{
   width: 350px;
   position: relative;
   margin-left: 37px;
-    opacity: 0.9;
-
+  opacity: 0.9;
 }
 
 .module-card-title {
@@ -362,19 +359,39 @@ section{
   padding: 15px;
 }
 
-.education .col-md-4:nth-child(4)  {
+.education .col-md-4:nth-child(4) {
   margin-top: 50px;
 }
-.education .col-md-4:nth-child(7){
+
+.education .col-md-4:nth-child(7) {
   margin-top: 150px;
 }
+
 .education .col-md-4 {
   margin-bottom: 15px;
 }
+
+.research .col-md-4 {
+  margin-bottom: 25px;
+}
+
 .modules .row {
   height: 600px;
-  display: -webkit-flex; /* Safari */
-  -webkit-flex-flow: column-reverse wrap; /* Safari 6.1+ */
+  display: -webkit-flex;
+  -webkit-flex-flow: column-reverse wrap;
   display: flex;
   flex-flow: column wrap;
+}
+
+.research_modules {
+  margin-top: 45px;
+}
+
+.research_modules .row {
+  height: 500px;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row-reverse wrap;
+  display: flex;
+  flex-flow: row-reverse wrap;
 }
