@@ -96,6 +96,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   margin-left: -15px;
 }
 
+section {}
+
 @media (min-width: 768px) {
   .col-md-12 {
     -webkit-box-flex: 0;
@@ -190,7 +192,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .blog-title h3 {
   margin-top: 15px 0 0 0;
 }
-.blog-link{
+
+.blog-link {
   padding-bottom: 15px;
 }
 
@@ -213,81 +216,102 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   background-size: cover;
 }
 
-.mission-page {
-  position: absolute;
-  transform: translate(25%, -120%);
+/* Education page */
+
+.education, .research {
+  justify-content: space-evenly;
+  background-image: url("../img/bgs/educa.jpg");
+  height: auto;
+  overflow-x: hidden !important;
 }
 
-.mission-title {
-  text-align: center;
-  font-size: 3em;
-  font-weight: 600;
-  color: white;
-  padding: 100px 0 0 0;
+.education {
+  margin-top: -6px;
 }
 
-.mission-row-one {
-  color: white;
-}
-
-.mission-row-two {
-  margin-top: 30px;
-}
-
-.mission-row-three {
-  margin-left: 180px;
-  margin-top: 20px;
-}
-
-.mission-rectangle {
+.education-card, .research-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
   background-color: #01244b;
-  width: 80%;
-  margin-left: 60px;
+  width: 400px;
 }
 
-.mission-circle1, .mission-circle2, .mission-circle5, .mission-circle6 {
+.education-card h3, .research-card h3 {
+  text-transform: uppercase;
+}
+
+.module-card {
+  color: #01244b;
+  background-color: #fff;
+  padding: 16px;
+  width: 350px;
+  position: relative;
+  margin-left: 37px;
+  opacity: 0.9;
+}
+
+.module-card-title {
+  text-align: center;
+  padding: 0 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.module-card-content {
+  padding: 15px;
+}
+
+.education .col-md-4:nth-child(4) {
+  margin-top: 50px;
+}
+
+.education .col-md-4:nth-child(7) {
+  margin-top: 150px;
+}
+
+.education .col-md-4 {
+  margin-bottom: 15px;
+}
+.modules .row {
+  height: 600px;
+  display: -webkit-flex;
+  -webkit-flex-flow: column-reverse wrap;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* research start */
+
+.research-card {
+  margin: 0 0 55px 25px;
+}
+
+.research .col-md-4 {
+  margin-bottom: 25px;
+}
+
+.research_modules {
+  margin-top: 45px;
+}
+
+.research_modules .row {
+  height: 500px;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row-reverse wrap;
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+/* mission section */
+.mission-circle {
   height: 150px;
   width: 250px;
   background-color: #01244b;
   border-radius: 50%;
-}
-
-.mission-circle1 {
-  box-shadow: 0px 20px #e4d90f;
-}
-
-.mission-circle2 {
-  box-shadow: 0px 20px #6049fa;
-}
-
-.mission-circle3, .mission-circle4 {
-  height: 170px;
-  width: 290px;
-  background-color: #01244b;
-  border-radius: 50%;
-}
-
-.mission-circle4 {
-  margin-left: 250px;
-  box-shadow: 0px 20px #00a4dc;
-}
-
-.mission-circle4 h2.text-center, .mission-circle3 h2.text-center {
-  padding: 65px;
-  font-size: 22px;
-}
-
-.mission-circle3 {
-  box-shadow: 0px 20px #ffa004;
-}
-
-.mission-circle5 {
-  box-shadow: 0px 20px #4dcb42;
-}
-
-.mission-circle6 {
-  box-shadow: 0px 20px #ff5403;
-  margin-right: 20px;
+  box-shadow: 0px 20px  #00a4dd;
 }
 
 #mission {
@@ -305,64 +329,35 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   line-height: 1.6;
 }
 
-/* Education page */
-
-.education {
+.mission-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
   justify-content: space-evenly;
-  background-image: url("../img/bgs/educa.jpg");
-  height: 100vh;
-  display: flex;
+  margin: auto;
 }
 
-.module-card-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.mission-item {
+  width: 20vw;
+  padding: 70px 0 0 0;
 }
 
-.education-card {
+.mission-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  color: #fff;
+  position: absolute;
+  transform: translate(0, -100vh);
+}
+
+.mission-title {
+ padding: 36px 0 0 0;
+  color: white;
+}
+
+
+
+.mission-rectangle {
   background-color: #01244b;
-  height: 150px;
-  width: 350px;
-  margin: 0 0 0 100px;
-}
-
-.research-card {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  background-color: #01244b;
-  min-height: 100px;
-  width: 350px;
-  padding: 16px;
-}
-
-.module-card {
-  display: flex;
-  flex-direction: column;
-  color: #01244b;
-  background-color: #fff;
-  min-height: 100px;
-  padding: 16px;
-  width: 350px;
-  opacity: 0.9;
-}
-
-.module-card-title {
-  text-align: center;
-  padding: 0 0 12px 0;
-  font-size: 2em;
-  font-weight: 600;
-}
-
-.module-card-content {
-  text-align: center;
-}
-
-.education .module-card-list:nth-child(2) {
-  margin: 100px 0 0 0;
+  width: 30%;
+  margin: auto;
 }

@@ -1,13 +1,13 @@
 <?php
 
-class Widget_Mission extends WP_Widget
+class Widget_Education extends WP_Widget
 {
 
     // constructor
     function __construct()
     {
         $widget_ops = array('classname' => 'moesia_services_widget', 'description' => __('Show what services you are able to provide.', 'moesia'));
-        parent::__construct(false, $name = __('Resilience Academy: Mission', 'moesia'), $widget_ops);
+        parent::__construct(false, $name = __('Resilience Academy: Education', 'moesia'), $widget_ops);
         $this->alt_option_name = 'moesia_services_widget';
     }
 
@@ -37,7 +37,7 @@ class Widget_Mission extends WP_Widget
 function update($new_instance, $old_instance)
 {
     $instance = $old_instance;
-    $instance['title']  = strip_tags($new_instance['title']);
+    $instance['title']             = strip_tags($new_instance['title']);
 
     return $instance;
 }
@@ -48,7 +48,7 @@ function widget($args, $instance)
     echo $args['before_widget'];
     $cache = array();
     if (!$this->is_preview()) {
-        $cache = wp_cache_get('mission_services', 'widget');
+        $cache = wp_cache_get('education_services', 'widget');
     }
 
     if (!is_array($cache)) {
@@ -67,70 +67,51 @@ function widget($args, $instance)
     ob_start();
     extract($args);
 
-    $title = (!empty($instance['title'])) ? $instance['title'] : __('MISSION', 'moesia');
+    $title = (!empty($instance['title'])) ? $instance['title'] : __('EDUCATION', 'moesia');
     $description = (!empty($instance['description'])) ? $instance['description'] : __('URBAN RESILIENCE', 'moesia');
 
     /** This filter is documented in wp-includes/default-widgets.php */
     $title = apply_filters('widget_title', $title, $instance, $this->id_base);
     $description = apply_filters('widget_description', $description, $instance, $this->id_base);
     $number = -1;
-
-
-
-    $r = new WP_Query(apply_filters('widget_posts_args', array(
-        'no_found_rows'       => true,
-        'post_status'         => 'publish',
-        'post_type'           => 'mission',
-        'posts_per_page'      => $number
-    )));
-
-    if ($r->have_posts()) :
         ?>
-<!-- <div class="mission-section">
-    <div class="mission-title">
-        <h1 id="mission"><?php echo $title; ?></h1>
-        <div class="mission-rectangle">
-            <h1 class="mission_words"> <?php echo $description; ?><br></h2>
+        
+<section class="education">
+    <div class="row">
+    <div class="col-md-5 col-md-offset-7">
+        <div class="education-card" style="margin-top:35px;">
+            <h3 class="module-card-title"> <?php echo $title ?></h3>
+            <div class="module-card-content">
+            <p><?php echo $description ?></p>
+           </div>
         </div>
+       </div>
     </div>
-    <div class="mission-content">
-    <?php while ($r->have_posts()) : $r->the_post(); ?>
-    <div class="mission-item">
-        <div class="mission-circle1">
-            <h2 class="text-center"><?php echo get_the_title(); ?></h2>
-        </div>
-    </div>
-    <?php endwhile; ?>
-    </div>
-</div> -->
-
-<div class="mission-page">
-    <div class="mission-title">
-        <h1 id="mission"><?php echo $title; ?></h1>
-        <div class="mission-rectangle">
-            <h1 class="mission_words"> <?php echo $description; ?><br></h2>
-        </div>
-    </div>
-    <div class="mission-content">
-    <?php while ($r->have_posts()) : $r->the_post(); ?>
-    <div class="mission-item">
-        <div class="mission-circle">
-            <h2 class="text-center"><?php echo get_the_title(); ?></h2>
-        </div>
-    </div>
-    <?php endwhile; ?>
-    </div>
-</div>
-
+  <?php query_posts( 'post_type=education&slug=education&orderby=meta_value&order=ASC'); ?>
+  <div class="modules">
+  <div class="row">
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <div class="col-md-4">
+       <div class="module-card">
+           <h3 class="module-card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+           <p  style="padding:5px;"><?php the_excerpt(); ?></p>         
+           </div>
+       </div>
+      <?php endwhile; else: ?>
+              <h3>Sorry, no modules for education!</h4>
+            <?php endif; ?>
+      <?php wp_reset_query(); ?>
+      </div>
+      </div>
+     </section>
+     
 <?php
         // Reset the global $the_post as this query will have stomped on it
 wp_reset_postdata();
 
-endif;
-
 if (!$this->is_preview()) {
     $cache[$args['widget_id']] = ob_get_flush();
-    wp_cache_set('mission_services', $cache, 'widget');
+    wp_cache_set('education_services', $cache, 'widget');
 } else {
     ob_end_flush();
 }

@@ -76,7 +76,9 @@ function page_widgets_init()
 
     //Register the front page widgets
     if (function_exists('siteorigin_panels_activate')) {
-        register_widget('Moesia_Edgar');
+        register_widget('Widget_Mission');
+        register_widget('Widget_Education');
+        register_widget('Widget_Research');
     }
 }
 add_action('widgets_init', 'page_widgets_init');
@@ -86,6 +88,9 @@ add_action('widgets_init', 'page_widgets_init');
  */
 if (function_exists('siteorigin_panels_activate')) {
     require get_template_directory() . "/widgets/mission.php";
+    require get_template_directory() . "/widgets/education.php";
+    require get_template_directory() . "/widgets/research.php";
+
 }
 
 // summary for post
@@ -97,9 +102,9 @@ function ra_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'ra_excerpt_length', 999 );
 
 // event widget
-add_action('init', 'events_init');
+add_action('init', 'custom_posts');
 
-function events_init() {
+function custom_posts() {
 	$args = array(
 		'labels' => array(
 			'name' => __('Events'),
@@ -115,10 +120,42 @@ function events_init() {
         'supports' => array('thumbnail','editor','title','custom-fields'),
         'taxonomies' => array( 'post_tag', 'category' ),
         'capability_type' => 'post',
+    );
+    $argseducation = array(
+		'labels' => array(
+			'name' => __('Module'),
+            'singular_name' => __('Module'),
+            'add_new' => ('Add New'),
+            'edit_item' => ('Edit Module'),
+            'menu_name' => ('Modules'),
+            'all_items' => ('All Modules'),
 
+		),
+		'public' => true,
+		'rewrite' => array("slug" => "module"), 
+        'supports' => array('thumbnail','editor','title','custom-fields'),
+        'taxonomies' => array( 'post_tag', 'category' ),
+        'capability_type' => 'post',
+    );
+    $argsresearch = array(
+		'labels' => array(
+			'name' => __('Research'),
+            'singular_name' => __('Research'),
+            'add_new' => ('Add New'),
+            'edit_item' => ('Edit Research'),
+            'menu_name' => ('Research'),
+            'all_items' => ('All Research'),
+
+		),
+		'public' => true,
+		'rewrite' => array("slug" => "research"), 
+        'supports' => array('thumbnail','editor','title','custom-fields'),
+        'taxonomies' => array( 'post_tag', 'category' ),
+        'capability_type' => 'post',
 	);
-
-	register_post_type( 'events' , $args );
+    register_post_type( 'events' , $args );
+    register_post_type( 'education' , $argseducation );
+    register_post_type( 'research' , $argsresearch );
 }
 
 /**
