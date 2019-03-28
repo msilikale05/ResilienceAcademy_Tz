@@ -95,7 +95,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   margin-right: -15px;
   margin-left: -15px;
 }
+section{
 
+}
 @media (min-width: 768px) {
   .col-md-12 {
     -webkit-box-flex: 0;
@@ -310,14 +312,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .education {
   justify-content: space-evenly;
   background-image: url("../img/bgs/educa.jpg");
-  height: 100vh;
-  display: flex;
-}
+  height: auto;
+  margin-top: -6px;
+  overflow-x: hidden !important;
 
-.module-card-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .education-card {
@@ -326,9 +324,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   justify-content: space-around;
   color: #fff;
   background-color: #01244b;
-  height: 150px;
-  width: 350px;
-  margin: 0 0 0 100px;
+  width: 400px;
+}
+.education-card h3{
+  text-transform: uppercase;
 }
 
 .research-card {
@@ -342,27 +341,40 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .module-card {
-  display: flex;
-  flex-direction: column;
   color: #01244b;
   background-color: #fff;
-  min-height: 100px;
   padding: 16px;
   width: 350px;
-  opacity: 0.9;
+  position: relative;
+  margin-left: 37px;
+    opacity: 0.9;
+
 }
 
 .module-card-title {
   text-align: center;
-  padding: 0 0 12px 0;
-  font-size: 2em;
+  padding: 0 12px;
   font-weight: 600;
+  color: #fff;
 }
 
 .module-card-content {
-  text-align: center;
+  padding: 15px;
 }
 
-.education .module-card-list:nth-child(2) {
-  margin: 100px 0 0 0;
+.education .col-md-4:nth-child(4)  {
+  margin-top: 50px;
+}
+.education .col-md-4:nth-child(7){
+  margin-top: 150px;
+}
+.education .col-md-4 {
+  margin-bottom: 15px;
+}
+.modules .row {
+  height: 600px;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: column-reverse wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: column wrap;
 }

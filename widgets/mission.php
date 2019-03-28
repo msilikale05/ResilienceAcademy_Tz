@@ -37,7 +37,7 @@ class Widget_Mission extends WP_Widget
 function update($new_instance, $old_instance)
 {
     $instance = $old_instance;
-    $instance['title']             = strip_tags($new_instance['title']);
+    $instance['title']  = strip_tags($new_instance['title']);
 
     return $instance;
 }
