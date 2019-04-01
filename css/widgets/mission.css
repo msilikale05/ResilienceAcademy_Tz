@@ -1,0 +1,50 @@
+
+/* styles for mission widget  */
+.mission-circle {
+    margin: auto;
+    height: 150px;
+    width: 250px;
+    background-color: #01244b;
+    border-radius: 50%;
+    box-shadow: 0px 20px  #00a4dd;  
+  }
+  
+  #mission {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: -38px;
+    font-weight: bolder;
+  }
+  
+  .mission_words {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 54px 24px;
+    font-size: 26px;
+    line-height: 1.6;
+  }
+  
+  
+  .mission-item {
+    padding: 50px 0 0px 0;
+  }
+  
+  .mission-page {
+    position: absolute;
+    transform: translateY(-100vh);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .mission-title {
+   padding: 36px 0 0 0;
+    color: white;
+  }
+  
+  
+  
+  .mission-rectangle {
+    background-color: #01244b;
+    width: 30%;
+    margin: auto;
+  }

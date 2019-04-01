@@ -4,16 +4,22 @@
 // add styles and js to the theme
 function add_theme_scripts()
 {
+    // plugin styles
     wp_enqueue_style('wp_theme_foss_4_g_dar-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', '1.0', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-slick', get_template_directory_uri() . '/css/slick.css"', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-plugins', get_template_directory_uri() . '/css/plugins.css"', true);
+    wp_enqueue_style('leaflet_css', get_template_directory_uri() . '/css/leaflet.css');
+
+    // custom styles
+    wp_enqueue_style('wp_theme_foss_4_g_dar-style', get_template_directory_uri() . '/css/style.css"', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-racademy', get_template_directory_uri() . '/css/racademy.css"', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/blog.css"', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-style', get_template_directory_uri() . '/css/style.css"', true);
-    wp_enqueue_style('leaflet_css', get_template_directory_uri() . '/css/leaflet.css');
+    wp_enqueue_style('wp_theme_foss_4_g_dar-widget-mission-', get_template_directory_uri() . '/css/widgets/mission.css"', true);
+
+
+    // scripts
     wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), true);
     wp_enqueue_script('jquery_ui', get_template_directory_uri() . '/js/jquery-ui.min.js', array(), true);
-
     wp_enqueue_script('slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), true);
     wp_enqueue_script('modules', get_template_directory_uri() . '/js/modules.js', array('jquery-ui-core', 'jquery'), true);
     wp_enqueue_script('current', get_template_directory_uri() . '/js/current.js', array('jquery-ui-core', 'jquery'), true);
