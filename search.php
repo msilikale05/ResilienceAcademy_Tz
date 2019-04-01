@@ -11,14 +11,14 @@ get_header(); ?>
 		<h2>
 			<?php
 				/* translators: %s: search query. */
-				printf( esc_html__( 'Search Results for: %s', 'wp_theme_foss_4_g_dar' ), '<span>' . get_search_query() . '</span>' );
+				printf( esc_html__( 'Search Results for: %s', 'wp_theme_resilience_academy' ), '<span>' . get_search_query() . '</span>' );
 			?>
 		</h2>
 	</div>
 </div>
 
 
-<?php do_action('wp_theme_foss_4_g_darl_action_breadcrumb'); ?>
+<?php do_action('wp_theme_resilience_academyl_action_breadcrumb'); ?>
 
 <div class="cart-section-lst section-padding white-bg">
         <div class="container">
@@ -30,7 +30,7 @@ get_header(); ?>
 					<header class="page-header">
 						<h1 class="page-title"><?php
 							/* translators: %s: search query. */
-							printf( esc_html__( 'Search Results for: %s', 'wp_theme_foss_4_g_dar' ), '<span>' . get_search_query() . '</span>' );
+							printf( esc_html__( 'Search Results for: %s', 'wp_theme_resilience_academy' ), '<span>' . get_search_query() . '</span>' );
 						?></h1>
 					</header><!-- .page-header -->
 
@@ -58,7 +58,7 @@ get_header(); ?>
 					 *
 					 * @hooked: nature_bliss_custom_posts_navigation - 10
 					 */
-					do_action( 'wp_theme_foss_4_g_dar_action_posts_navigation' );
+					do_action( 'wp_theme_resilience_academy_action_posts_navigation' );
 
 
 

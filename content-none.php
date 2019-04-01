@@ -8,7 +8,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wp_theme_foss_4_g_dar' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wp_theme_resilience_academy' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -19,7 +19,7 @@
 				printf(
 					wp_kses(
 						/* translators: 1: link to WP admin new post page. */
-						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wp_theme_foss_4_g_dar' ),
+						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wp_theme_resilience_academy' ),
 						array(
 							'a' => array(
 								'href' => array(),
@@ -32,13 +32,13 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp_theme_foss_4_g_dar' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp_theme_resilience_academy' ); ?></p>
 			<?php
 				get_search_form();
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp_theme_foss_4_g_dar' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp_theme_resilience_academy' ); ?></p>
 			<?php
 				get_search_form();
 

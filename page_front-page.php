@@ -74,7 +74,7 @@ get_header(); ?>
                         <div class="blog-info">
                             <p><?php the_excerpt(); ?></p>
                             <a href="<?php the_permalink(); ?>" class="blog-link">
-                                <?php esc_attr_e('Read More ', 'wp_theme_foss_4_g_dar'); ?>
+                                <?php esc_attr_e('Read More ', 'wp_theme_resilience_academy'); ?>
                                 <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>

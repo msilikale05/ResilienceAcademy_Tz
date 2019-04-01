@@ -9,7 +9,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  *
  *
- * @package wp_theme_foss_4_g_dar
+ * @package wp_theme_resilience_academy
 
  */
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 </div>
 
 
-<?php do_action('wp_theme_foss_4_g_dar__action_breadcrumb'); ?>
+<?php do_action('wp_theme_resilience_academy__action_breadcrumb'); ?>
 <section>
 <div class="cart-section-lst section-padding white-bg"> 
 <div class="container" style="margin-top:25px;">
@@ -43,7 +43,7 @@ get_header(); ?>
 					?>
 					<div class="clearfix"></div>
 					<?php
-					do_action( 'wp_theme_foss_4_g_dar__action_posts_navigation' );
+					do_action( 'wp_theme_resilience_academy__action_posts_navigation' );
 
 				else :
 
@@ -71,7 +71,7 @@ get_header(); ?>
 					?>
 					<div class="clearfix"></div>
 					<?php
-					do_action( 'wp_theme_foss_4_g_dar__action_posts_navigation' );
+					do_action( 'wp_theme_resilience_academy__action_posts_navigation' );
 
 				else :
 

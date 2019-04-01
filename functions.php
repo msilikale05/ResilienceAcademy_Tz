@@ -5,17 +5,17 @@
 function add_theme_scripts()
 {
     // plugin styles
-    wp_enqueue_style('wp_theme_foss_4_g_dar-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', '1.0', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-slick', get_template_directory_uri() . '/css/slick.css"', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-plugins', get_template_directory_uri() . '/css/plugins.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', '1.0', true);
+    wp_enqueue_style('wp_theme_resilience_academy-slick', get_template_directory_uri() . '/css/slick.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-plugins', get_template_directory_uri() . '/css/plugins.css"', true);
     wp_enqueue_style('leaflet_css', get_template_directory_uri() . '/css/leaflet.css');
 
     // custom styles
-    wp_enqueue_style('wp_theme_foss_4_g_dar-style', get_template_directory_uri() . '/css/style.css"', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-racademy', get_template_directory_uri() . '/css/racademy.css"', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/blog.css"', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-footer', get_template_directory_uri() . '/css/footer.css"', true);
-    wp_enqueue_style('wp_theme_foss_4_g_dar-widget-mission-', get_template_directory_uri() . '/css/widgets/mission.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-style', get_template_directory_uri() . '/css/style.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-racademy', get_template_directory_uri() . '/css/racademy.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-blog', get_template_directory_uri() . '/css/blog.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-footer', get_template_directory_uri() . '/css/footer.css"', true);
+    wp_enqueue_style('wp_theme_resilience_academy-widget-mission-', get_template_directory_uri() . '/css/widgets/mission.css"', true);
 
 
     // scripts
@@ -26,8 +26,7 @@ function add_theme_scripts()
     wp_enqueue_script('current', get_template_directory_uri() . '/js/current.js', array('jquery-ui-core', 'jquery'), true);
     wp_enqueue_script('countdown', get_template_directory_uri() . '/js/jquery.countdown.min.js', array('jquery-ui-core', 'jquery'), true);
     wp_enqueue_script('leaflet_js', get_template_directory_uri() . '/js/leaflet.js');
-    wp_enqueue_script('bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
-    wp_enqueue_script('foss4g', get_template_directory_uri() . '/js/foss4g.js', array('jquery-ui-core', 'jquery'),  true);
+    wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js');
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
@@ -105,7 +104,7 @@ add_theme_support('html5', array(
 
 // logo function
 add_theme_support('custom-logo');
-function foss4g2018_custom_logo_setup()
+function resilienceAcademy_custom_logo_setup()
 {
     $defaults = array(
         'height'      => 100,
@@ -122,9 +121,9 @@ add_action('after_setup_theme', 'the_custom_logo_custom_logo_setup');
 function wpb_custom_new_menu()
 {
     register_nav_menus(array(
-        'primary' => esc_html__('Primary', 'wp_theme_foss_4_g_dar'),
-        'secondary' => esc_html__('Secondary', 'wp_theme_foss_4_g_dar'),
-        'tertiary' => esc_html__('Tertiary', 'wp_theme_foss_4_g_dar'),
+        'primary' => esc_html__('Primary', 'wp_theme_resilience_academy'),
+        'secondary' => esc_html__('Secondary', 'wp_theme_resilience_academy'),
+        'tertiary' => esc_html__('Tertiary', 'wp_theme_resilience_academy'),
 
     ));
 }
@@ -140,9 +139,9 @@ set_post_thumbnail_size(250, 250);
 function page_widgets_init()
 {
     register_sidebar(array(
-        'name'          => esc_html__('Sidebar', 'wp_theme_foss_4_g_dar'),
+        'name'          => esc_html__('Sidebar', 'wp_theme_resilience_academy'),
         'id'            => 'sidebar-1',
-        'description'   => esc_html__('Add widgets here.', 'wp_theme_foss_4_g_dar'),
+        'description'   => esc_html__('Add widgets here.', 'wp_theme_resilience_academy'),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h3 class="widget-title">',
@@ -237,14 +236,14 @@ function custom_posts()
 /**
  * Function to check if version 1.8.5 or less has been previously installed.
  */
-function wp_theme_foss_4_g_dar_check_if_old_version_of_theme()
+function wp_theme_resilience_academy_check_if_old_version_of_theme()
 {
 
-    $old_wp_theme_foss_4_g_dar_option   = get_theme_mod('wp_theme_foss_4_g_dar_bigtitle_title');
-    $old_wp_theme_foss_4_g_dar_option_2 = get_theme_mod('wp_theme_foss_4_g_dar_bigtitle_redbutton_label');
-    $old_wp_theme_foss_4_g_dar_option_3 = get_theme_mod('wp_theme_foss_4_g_dar_ourfocus_title');
+    $old_wp_theme_resilience_academy_option   = get_theme_mod('wp_theme_resilience_academy_bigtitle_title');
+    $old_wp_theme_resilience_academy_option_2 = get_theme_mod('wp_theme_resilience_academy_bigtitle_redbutton_label');
+    $old_wp_theme_resilience_academy_option_3 = get_theme_mod('wp_theme_resilience_academy_ourfocus_title');
 
-    if (!empty($old_wp_theme_foss_4_g_dar_option) || !empty($old_wp_theme_foss_4_g_dar_option_2) || !empty($old_wp_theme_foss_4_g_dar_option_3)) {
+    if (!empty($old_wp_theme_resilience_academy_option) || !empty($old_wp_theme_resilience_academy_option_2) || !empty($old_wp_theme_resilience_academy_option_3)) {
         return true;
     }
     return false;

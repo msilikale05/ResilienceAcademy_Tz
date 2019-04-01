@@ -28,7 +28,7 @@
                                 the_content();
 
                                 wp_link_pages( array(
-                                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp_theme_foss_4_g_dar' ),
+                                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp_theme_resilience_academy' ),
                                     'after'  => '</div>',
                                 ) );
                             ?>
@@ -43,7 +43,7 @@
                                 <ul class="blog-cat-lst list-inline">
 
                                     <?php
-                                     do_action( 'wp_theme_foss_4_g_dar_action_tags_display' );
+                                     do_action( 'wp_theme_resilience_academy_action_tags_display' );
                                      ?>
                                 </ul>
                             </div>
@@ -55,11 +55,11 @@
                     <?php 
                      // Previous/next post navigation.
                     the_post_navigation( array(
-                        'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'wp_theme_foss_4_g_dar' ) . '</span> ' .
-                            '<span class="screen-reader-text">' . __( 'Next post:', 'wp_theme_foss_4_g_dar' ) . '</span> ' .
+                        'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'wp_theme_resilience_academy' ) . '</span> ' .
+                            '<span class="screen-reader-text">' . __( 'Next post:', 'wp_theme_resilience_academy' ) . '</span> ' .
                             '<span class="post-title">%title</span>',
-                        'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'wp_theme_foss_4_g_dar' ) . '</span> ' .
-                            '<span class="screen-reader-text">' . __( 'Previous post:', 'wp_theme_foss_4_g_dar' ) . '</span> ' .
+                        'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'wp_theme_resilience_academy' ) . '</span> ' .
+                            '<span class="screen-reader-text">' . __( 'Previous post:', 'wp_theme_resilience_academy' ) . '</span> ' .
                             '<span class="post-title">%title</span>',
                     ) );
 

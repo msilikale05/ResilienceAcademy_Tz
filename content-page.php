@@ -22,7 +22,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp_theme_foss_4_g_dar' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp_theme_resilience_academy' ),
 				'after'  => '</div>',
 			) );
 		?>
