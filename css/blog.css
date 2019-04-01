@@ -64,7 +64,7 @@
     background-color: #01244b;
 }
 
-.blog-img>img {
+.blog-img> a img {
     display: inline-block;
     /* height: auto; */
     max-width: 100%;
@@ -128,7 +128,7 @@ h3::after, .article-feature_content h3::after{
 .events-news{
     display: flex;
 }
-.event-date{
+.event-date a{
     font-size: 30px;
     font-weight: 700;
     position: relative;

@@ -11,7 +11,7 @@
   margin-right: 0;
   margin-left: 0;
   background-color: #00a4dd;
-  padding: 24px 12px;
+  padding: 18px 12px;
 }
 
 .navmenu.navbar.navbar-inverse.navbar-fixed-top {
@@ -65,9 +65,8 @@
 }
 
 .logo img {
-  width: 50px;
+  width: 40px;
   height: auto;
-  margin-left: 100px;
 }
 
 .ftco-no-pb {

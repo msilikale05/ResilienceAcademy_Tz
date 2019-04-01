@@ -14,7 +14,7 @@
  <div class="row" style="margin-top:45px;">
  <div class="col-md-7">
  <figure class="blog-img">
-  <?php the_post_thumbnail( 'single-featured'); ?>
+ <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'single-featured'); ?></a>
  </figure>
 </div>
 <div class="col-md-5">

@@ -13,7 +13,6 @@
 
  */
 get_header(); ?>
-  <div class="clear"></div>
 </header> 
 <div class="event intro-banner3 overlay">
 	<h2 class="news">Events <span class='special'>&</span> News</h2>
