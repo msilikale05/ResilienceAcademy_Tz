@@ -131,37 +131,7 @@ section {}
   text-shadow: 2px 2px 2px #696464b5;
 }
 
-.footer-content {
-  display: flex;
-  color: white;
-  justify-content: space-between;
-}
 
-.footer-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-divider {
-  border-bottom: 2px solid;
-  width: 150px;
-  margin: 0 0 10px 10px;
-}
-
-.footer-social-media {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-social-media div {
-  padding-bottom: 5px;
-}
-
-.footer-item-title {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid yellow;
-}
 
 .latest {
   background-color: #dadada;

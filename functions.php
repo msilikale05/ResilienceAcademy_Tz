@@ -14,6 +14,7 @@ function add_theme_scripts()
     wp_enqueue_style('wp_theme_foss_4_g_dar-style', get_template_directory_uri() . '/css/style.css"', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-racademy', get_template_directory_uri() . '/css/racademy.css"', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-blog', get_template_directory_uri() . '/css/blog.css"', true);
+    wp_enqueue_style('wp_theme_foss_4_g_dar-footer', get_template_directory_uri() . '/css/footer.css"', true);
     wp_enqueue_style('wp_theme_foss_4_g_dar-widget-mission-', get_template_directory_uri() . '/css/widgets/mission.css"', true);
 
 
