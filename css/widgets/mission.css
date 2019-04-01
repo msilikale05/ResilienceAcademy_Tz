@@ -12,6 +12,7 @@
   #mission {
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 4px 4px #01244b;
     margin-bottom: -38px;
     font-weight: bolder;
   }
@@ -47,4 +48,12 @@
     background-color: #01244b;
     width: 30%;
     margin: auto;
+  }
+
+  .mission-page a {
+    color: white;
+  }
+
+  .mission-page a:hover {
+    color: #00a4dd;
   }

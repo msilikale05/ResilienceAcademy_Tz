@@ -86,24 +86,6 @@ function widget($args, $instance)
 
     if ($r->have_posts()) :
         ?>
-
-<!-- <div class="mission-page">
-    <div class="mission-title">
-        <h1 id="mission"><?php echo $title; ?></h1>
-        <div class="mission-rectangle">
-            <h1 class="mission_words"> <?php echo $description; ?><br></h2>
-        </div>
-    </div>
-    <div class="mission-content">
-    <?php while ($r->have_posts()) : $r->the_post(); ?>
-    <div class="mission-item">
-        <div class="mission-circle">
-            <h2 class="text-center"><?php echo get_the_title(); ?></h2>
-        </div>
-    </div>
-    <?php endwhile; ?>
-    </div>
-</div> -->
 <div class="mission-page">
     <div class="container">
         <div class="mission-title">
@@ -116,7 +98,7 @@ function widget($args, $instance)
             <?php while ($r->have_posts()) : $r->the_post(); ?>
             <div class="mission-item col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="mission-circle">
-                    <h2 class="text-center"><?php echo get_the_title(); ?></h2>
+                    <h2 class="text-center"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
                 </div>
             </div>
             <?php endwhile; ?>

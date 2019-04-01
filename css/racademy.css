@@ -177,7 +177,7 @@ section {}
 /* missions page start */
 
 .bg-image {
-  background-image: url("../img/bgs/mission.jpeg");
+  background-image: url("../img/bgs/mission.jpg");
   filter: blur(3px);
   -webkit-filter: blur(3px);
   height: 100vh;
