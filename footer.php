@@ -43,8 +43,8 @@
             <h4>Follow us</h4>  
             <div style="border-color: #1729ed" class="footer-divider"></div>
             <div class="footer-social-media">
-                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/facebook-icon.png" alt="facebook" width="30" height="30"/> <a href="https://www.facebook.com/ututanzania/">Facebook</a></div>
-                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/twitter-icon.png" alt="facebook" width="30" height="30"/> <a href="https://twitter.com/Tanzania_RA " target="_blank">Twitter</a></div>
+                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/facebook-icon.png" alt="facebook" width="30" height="30"/> <a href="https://www.facebook.com/ututanzania/" target="_blank">Facebook</a></div>
+                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/twitter-icon.png" alt="facebook" width="30" height="30"/> <a href="https://twitter.com/Tanzania_RA" target="_blank">Twitter</a></div>
                 <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/mobile-icon.png" alt="facebook" width="30" height="25"/> Mobile: +255 XXX XXX XXX</div>
             </div>
         </div>

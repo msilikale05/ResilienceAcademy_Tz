@@ -21,6 +21,13 @@
     display: flex;
     flex-direction: column;
   }
+
+  .footer-social-media a {
+      color: white;
+  }
+  .footer-social-media a:hover {
+      color: black;
+  }
   
   .footer-social-media div {
     padding-bottom: 5px;
