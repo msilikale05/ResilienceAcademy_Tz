@@ -10,8 +10,8 @@ get_header(); ?>
 <div class="full_slider preloader">
     <div id="fullwidth_slider" class="flexslider">
         <ul class="slides">
-            <li data-thumb="<?php echo get_bloginfo('template_directory'); ?>/dar_from_the_air-thumb.jpg"> <img src="<?php echo get_bloginfo('template_directory'); ?>/img/backgrounds/dar_from_the_air.jpg" alt="" class="slide_bg" /></li>
-            <li data-thumb="bg_1-thumb.jpg"> <img src="<?php echo get_bloginfo('template_directory'); ?>/img/bg_1.jpg" alt="" class="slide_bg" /></li>
+            <li> <img src="<?php echo get_bloginfo('template_directory'); ?>/img/raImages/_MG_5377.jpg" alt="" class="slide_bg" /></li>
+            <li> <img src="<?php echo get_bloginfo('template_directory'); ?>/img/raImages/36105604753_3bb04ccf07_o.jpg" alt="" class="slide_bg" /></li>
         </ul>
     </div>
 </div>
