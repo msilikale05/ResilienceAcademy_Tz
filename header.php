@@ -73,7 +73,7 @@
                                 'menu_id'         => 'secondary_nav',
                                 'menu_class'      => 'secondary-items',         
                                 'container-fluid'      => 'div',
-                                'container_class'=> 'text-center',
+                                'container_class'=> 'text-center secondary',
                                 'walker'         => '',
                                 'fallback_cb'    => 'wp_page_menu',
 

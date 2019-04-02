@@ -22,6 +22,8 @@
 .navbar-inverse {
   background-color: #00a4dd;
   border-color: #00a4dd;
+  box-shadow: 0 1px 15px 3px #d3d4d4d1;
+
 }
 
 .navmenu ul li a {
@@ -46,6 +48,9 @@
 .primary_menu li a:hover {
   color: #00a4dd;
 }
+.text-center.secondary li a:hover, .tertiary_menu li a:hover, .announce-card a:hover{
+  color: #272829;
+}
 
 .navmenu ul li, .scroll ul li {
   display: inline-block;
@@ -56,7 +61,7 @@
   text-transform: uppercase;
 }
 
-.text-center {
+.text-center.secondary {
   text-align: center;
   color: #fff;
   font-size: 16px;
@@ -124,7 +129,7 @@ section {}
   box-shadow: 5px 5px 15px 6px #6b6b67d1;
 }
 
-.announce-card>h2 {
+.announce-card > a {
   font-weight: 900;
   color: white;
   text-shadow: 2px 2px 2px #696464b5;
@@ -194,7 +199,7 @@ section {}
   overflow-x: hidden !important;
 }
 
-.education {
+.education,.full_slider,.research {
   margin-top: -6px;
 }
 

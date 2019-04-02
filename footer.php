@@ -50,7 +50,7 @@
         </div>
         <div>
         <div class="announce-card">
-        <h2>Interested<br>in Urban <br/>Resilience?<br/> <br> Check out!<h2>
+        <a href="#home" ><h2>Interested<br>in Urban <br/>Resilience?<br/> <br> Check out!<h2></a>
     </div>
 </div>
     </div>

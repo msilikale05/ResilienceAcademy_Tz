@@ -7,7 +7,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -28px;
+    margin-top: -48px;
 }
 
 .overlay:before {
@@ -108,7 +108,7 @@
         position: absolute;
         display: block;
         height: 2px;
-        background-color: #ff5403;
+        background-color: #00a3dd;
         margin-top: 45px;
         left: -55;
         width: 120px;
@@ -135,7 +135,7 @@
     position: relative;
     top: 55;
     left: 50;
-    color: #ff5403;
+    color: #00a3dd;
 }
 
 .hero_inner {
@@ -220,7 +220,10 @@
     width: 50%;
     height: auto;
 }
+.site__centered figure img{
+    width: 100%;
 
+} 
 .wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
     display: table;
     margin-left: auto;
@@ -229,4 +232,56 @@
 .wp-block-image .alignleft .wp-block-image .alignright{
     float: none;
     margin-right: 1em;
+}
+
+/* for event single page */
+.page-segment.segment-flush {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.bg-tint, .segment-tint {
+    background-color: #dadada36;;
+}
+@media (min-width: 768px) {
+.page-segment {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.page-segment {
+    padding: 35px 0;
+}
+.col-sm-push-6,.col-md-push-6 {
+    left: 50%;
+} 
+.col-sm-pull-6,.col-md-pull-6 {
+    right: 50%;
+}
+}
+
+.segment-graphic > img{
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: -6px;
+}
+.event-attr-list-lg {
+    font-size: 16px;
+}
+
+.event-attr-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-title{
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.event-attr-list-lg>li {
+    margin-bottom: 15px;
 }
