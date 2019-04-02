@@ -189,7 +189,15 @@ section {}
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.mission_inner
+{
+  background-image: url("../img/bgs/mission.jpg");
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1.5px);
+}
 /* Education page */
 
 .education, .research {

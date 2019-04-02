@@ -23,7 +23,7 @@ get_header();?>
                 get_template_part( 'common-pages/content', 'research' );
              }
              elseif ( 'mission' == get_post_type()){  
-                get_template_part( 'content', 'single' );
+                get_template_part( 'common-pages/content', 'mission' );
              }
              else {
                  echo "
