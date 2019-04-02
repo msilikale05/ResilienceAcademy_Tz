@@ -14,7 +14,7 @@
   .footer-divider {
     border-bottom: 2px solid;
     width: 150px;
-    margin: 0 0 10px 10px;
+    margin: 0 0 20px 10px;
   }
   
   .footer-social-media {
@@ -38,3 +38,38 @@
     flex-direction: column;
     border: 1px solid yellow;
   }
+  .resilience-social-icon {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .resilience-icons{
+    margin:10px 0 10px 0;
+  }
+  .resilience-social-icon.resilience-social-icon-facebook {
+    padding: 8px 14px;
+  }
+  
+  .resilience-social-icon.resilience-social-icon-twitter,
+  .resilience-social-icon.resilience-social-icon-mobile {
+    padding: 8px 12px;
+  }
+  
+  .resilience-social-icon:last-child {
+    margin: 0;
+  }
+  
+  .resilience-social-icon-facebook {
+    background-color: #3b5998;
+  }
+  
+  .resilience-social-icon-twitter {
+    background-color: #158dd8;
+  }
+  .resilience-social-icon-mobile{
+    background-color: #e4d90fcf;
+  
+  }
+  

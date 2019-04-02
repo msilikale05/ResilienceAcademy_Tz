@@ -41,11 +41,24 @@
 
         <div class="footer-item">
             <h4>Follow us</h4>  
-            <div style="border-color: #1729ed" class="footer-divider"></div>
+            <div style="border-color: #1729ed;" class="footer-divider"></div>
             <div class="footer-social-media">
-                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/facebook-icon.png" alt="facebook" width="30" height="30"/> <a href="<?php echo get_option('facebook_url'); ?>" target="_blank">Facebook</a></div>
-                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/twitter-icon.png" alt="facebook" width="30" height="30"/> <a href="<?php echo get_option('twitter_url'); ?>" target="_blank">Twitter</a></div>
-                <div><img src="<?php echo get_bloginfo('template_directory'); ?>/img/icons/mobile-icon.png" alt="facebook" width="30" height="25"/> Mobile: <?php echo get_option('mobile_url'); ?></div>
+                <div class="resilience-icons">  
+                    <a  href="<?php echo get_option('facebook_url'); ?>" target="_blank">
+                        <span class="resilience-social-icon resilience-social-icon-facebook">
+                    <i aria-hidden="true" class="fa fa-facebook"></i></span>  Facebook</a></div>
+                <div class="resilience-icons"> <a href="<?php echo get_option('twitter_url'); ?>" target="_blank">
+                    <span class="resilience-social-icon resilience-social-icon-twitter">
+                        <i aria-hidden="true" class="fa fa-twitter"></i></span>  
+                            Twitter
+                        </a>
+                  </div>
+                <div class="resilience-icons"><a href="<?php echo get_option('mobile_url'); ?>">
+                <span class="resilience-social-icon resilience-social-icon-mobile">
+                        <i aria-hidden="true" class="fa fa-phone"></i></span>  
+                        Mobile:
+                        </a>            
+            </div>
             </div>
         </div>
         <div>

@@ -23,7 +23,6 @@
   background-color: #00a4dd;
   border-color: #00a4dd;
   box-shadow: 0 1px 15px 3px #919898d1;
-
 }
 
 .navmenu ul li a {
@@ -48,7 +47,8 @@
 .primary_menu li a:hover {
   color: #00a4dd;
 }
-.text-center.secondary li a:hover, .tertiary_menu li a:hover, .announce-card a:hover{
+
+.text-center.secondary li a:hover, .tertiary_menu li a:hover, .announce-card a:hover {
   color: #272829;
 }
 
@@ -129,13 +129,11 @@ section {}
   box-shadow: 5px 5px 15px 6px #6b6b67d1;
 }
 
-.announce-card > a {
+.announce-card>a {
   font-weight: 900;
   color: white;
   text-shadow: 2px 2px 2px #696464b5;
 }
-
-
 
 .latest {
   background-color: #dadada;
@@ -189,8 +187,8 @@ section {}
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mission_inner
-{
+
+.mission_inner {
   background-image: url("../img/bgs/mission.jpg");
   height: 350px;
   background-position: center;
@@ -198,6 +196,7 @@ section {}
   background-size: cover;
   filter: blur(1.5px);
 }
+
 /* Education page */
 
 .education, .research {
@@ -207,7 +206,7 @@ section {}
   overflow-x: hidden !important;
 }
 
-.education,.full_slider,.research {
+.education, .full_slider, .research {
   margin-top: -6px;
 }
 
@@ -256,6 +255,7 @@ section {}
 .education .col-md-4 {
   margin-bottom: 15px;
 }
+
 .modules .row {
   height: 600px;
   display: -webkit-flex;
