@@ -63,3 +63,7 @@
   .mission-page a:hover {
     color: #00a4dd;
   }
+
+  .mission-circle .text-center {
+    font-size: 16px;
+  }
