@@ -33,7 +33,7 @@
                                     'after'  => '</div>',
                                 ) ); ?>
          </p>
-         <h4 >This post was written by <?php the_author(); ?></h4>
+         <p style="margin-left:12px;"><strong>This post was written by <?php the_author(); ?></strong></p>
          </div>  
     </div>
  </div>
